@@ -1,0 +1,1437 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: #444444;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+/*--------------------------------------------------------------
+# Color root
+--------------------------------------------------------------*/
+
+:root {
+  --primary-color: #004b84;
+  --secondary-color: #d0de29;
+  --white-color: #fff;
+  --black-color: #000;
+  --silver-color: #7e7e7e;
+  ---border-silver: #dedede;
+  --table-border: #e9e9e9;
+  --category-border: #b7b7b7;
+}
+
+.heading {
+  font-size: var(--heading-font);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Heading
+--------------------------------------------------------------*/
+:root {
+  --heading-font: 24px;
+  --text-font: 15px;
+}
+
+/* ---------- Get Quote modal ----------- */
+.get-qoute-modal .modal-header h1 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.get-qoute-modal .modal-body {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.get-qoute-modal .modal-body p {
+  font-size: 16px;
+}
+
+.get-qoute-modal .input-group-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.get-qoute-modal .form-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #e9ecef;
+  color: var(--silver-color);
+}
+
+.get-qoute-modal .modal-footer .btn-wrapper {
+  float: right;
+  gap: 1rem;
+}
+
+.get-qoute-modal .modal-footer .btn-grey {
+  background-color: #e9ecef;
+  color: var(--primary-color);
+  border: none;
+}
+
+.get-qoute-modal .modal-footer .view-btn {
+  border: none;
+}
+
+.get-qoute-modal .modal-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.get-qoute-modal .modal-body #disabledTextInput {
+  cursor: not-allowed;
+}
+
+/* ---------- Seller Contact Modal ---------- */
+.seller-btn {
+  border: none
+}
+
+/* ---------- About------ */
+
+
+.about-breadcrumbs .breadcrumb {
+  margin-bottom: 10px;
+}
+
+.about-breadcrumb {
+  margin-top: -5rem;
+}
+
+.about {
+  padding: 0;
+  position: relative;
+}
+
+.about-nav .nav {
+  justify-content: center;
+  background-color: #E2F1F8;
+  padding: 1rem 0;
+}
+
+.about-nav .nav-tabs {
+  border: none;
+}
+
+.about-nav .nav-tabs .nav-link {
+  margin-right: 5rem;
+  color: #004B83;
+  font-weight: 500;
+  position: relative;
+}
+
+.about-nav .nav-tabs .nav-link::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/about-us/arrow.png);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 100px;
+  left: 0;
+  margin-left: -12px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.about-nav .nav-tabs .nav-link.active {
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #FB9C7A, #D150C1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  color: #004B83;
+  border-radius: 12px;
+}
+
+.about-nav .nav-tabs .nav-link.active::before {
+  background-image: none;
+}
+
+/* ---------- Leadership Tab------------ */
+
+.leadership {
+  background-image: url(../img/about-us/leadership.jpg);
+  background-repeat: no-repeat;
+  padding: 13rem 0;
+  background-size: cover;
+}
+
+.leadership_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+}
+
+.leadership_content h1 {
+  font-size: 48px;
+  font-family: titillium-regular;
+  color: black;
+  font-weight: 400;
+}
+
+.leadership_content h1 span {
+  color: #2893C6;
+  font-weight: 600;
+}
+
+.leadership_content p {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.about-nav .tab-content {
+  margin: 0;
+}
+
+.founders-content {
+  padding: 6rem 0 11rem 0;
+}
+
+.founders-content .items {
+  gap: 5rem;
+}
+
+.founders-content img {
+  margin-bottom: 3rem;
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.founders_details {
+  padding-left: 2rem;
+}
+
+.founders_details h2 {
+  font-size: 36px;
+  color: #2893C6;
+  font-family: titillium-regular;
+  font-weight: 700;
+  text-align: center;
+}
+
+.founders_details h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--black-color);
+  font-family: titillium-regular;
+  font-weight: 600;
+}
+
+.founders_details p {
+  font-size: 18px;
+  color: var(--black-color);
+  text-align: justify;
+  font-weight: 400;
+
+}
+
+/* --------------- Philoshophy ---------- */
+
+.philosophy-item {
+  background-image: url(../img/about-us/Concept.jpg);
+  background-repeat: no-repeat;
+  background-color: #F5F5F5;
+  padding: 23rem 0 10rem 0;
+  background-size: cover;
+}
+
+.philosophy-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.philosophy-text h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  font-family: titillium-regular;
+  color: black;
+  font-weight: 400;
+
+}
+
+.philosophy-text h1 span {
+  color: #AE412E;
+  font-weight: 700;
+}
+
+.philosophy-text p {
+  font-size: 18px;
+  color: black;
+}
+
+.innovate {
+  background-image: url(../img/about-us/Innovate.jpg);
+  background-color: var(--white-color);
+}
+
+.innovate .philosophy-text h1 span {
+  color: #7967AC;
+}
+
+.sustenance {
+  background-image: url(../img/about-us/sustence.jpg);
+}
+
+.sustenance .philosophy-text h1 span {
+  color: #EE4F3B;
+}
+
+.expansion {
+  background-image: url(../img/about-us/expension.jpg);
+  background-color: var(--white-color);
+}
+
+.expansion .philosophy-text h1 span {
+  color: #2893C6;
+}
+
+.integrate {
+  background-image: url(../img/about-us/Integrate.jpg);
+}
+
+.integrate .philosophy-text h1 span {
+  color: #7663AD;
+}
+
+/* --------- Vanture ------------ */
+
+.venture-bg {
+  background-image: url(../img/about-us/skoodos-school.png);
+  padding: 14rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F5F5F5;
+}
+
+.venture-content hr {
+  width: 80%;
+  height: 2px;
+  color: var(--secondary-color);
+  opacity: 1;
+  margin: 2rem 0;
+}
+
+.venture-content img {
+  width: 50%;
+}
+
+.venture-content h2 {
+  font-size: 36px;
+  color: var(--white-color);
+  font-family: roboto;
+  text-align: left;
+}
+
+.venture-content h3 {
+  font-size: 50px;
+  color: var(--secondary-color);
+  margin-bottom: 24px;
+  font-family: roboto;
+}
+
+.venture-content p {
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.venture-bg .btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 2rem 0;
+  padding: 8px 0;
+  width: 160px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.venture-bg .btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.selin-bg {
+  background-image: url(../img/about-us/selin.jpg);
+  padding: 24rem 0 12rem 0;
+}
+
+.venture-bg .btn-visit-selin {
+  background-color: #C8A244;
+  color: var(--white-color);
+}
+
+.selin-bg .venture-content {
+  margin-top: 8rem;
+}
+
+.venture-bg .btn-visit-selin:hover {
+  color: #C8A244;
+}
+
+.selin-bg p {
+  width: 40%;
+  margin: auto;
+  padding: 2rem 0;
+  font-family: poppins-regular;
+}
+
+.bridge {
+  background-image: url(../img/about-us/bridge-bg.png);
+  padding: 16rem 0;
+}
+
+.bridge h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: popins;
+  font-weight: 500;
+}
+
+.bridge h2 span {
+  font-weight: 700;
+}
+
+.bridge p {
+  color: var(--primary-color);
+}
+
+.bridge .btn-bridge {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.bridge .btn-bridge:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.mart {
+  background-image: url(../img/about-us/skoodos-mart-bg.jpg);
+  padding: 23rem 0 5rem 0;
+  margin-bottom: 8rem;
+}
+
+.mart .btn-mart {
+  margin-top: 8rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.mart .btn-mart:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.mart h2 {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.mart h3 {
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.mart p {
+  color: var(--white-color);
+  width: 40%;
+  margin: 0 auto;
+}
+
+.venture-bg-silver {
+  background-color: #F5F5F5;
+}
+
+/* ------------ Careers ------------- */
+
+.careers-hero {
+  background-image: url(../img/about-us/career-growth.jpg);
+  padding: 22rem 0 13rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F5F5F5;
+}
+
+.careers-content h2 {
+  font-size: 50px;
+  font-family: titillium-regular;
+  color: black;
+  font-weight: 400;
+  text-align: left;
+
+}
+
+.careers-content h2 span {
+  color: #2893C6;
+  font-weight: 600;
+}
+
+.careers-content p {
+  font-size: 18px;
+  color: black;
+}
+
+.career-features {
+  padding: 6rem 0;
+}
+
+.career-features-img img {
+  width: 320px;
+  height: 295px;
+  object-fit: contain;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.career-features-content h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #2893C6;
+  font-family: titillium-regular;
+  font-weight: 600;
+  text-align: center;
+}
+
+.career-features-content p {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.career-slider {
+  background-color: #F5F5F5;
+  padding: 5rem 0;
+}
+
+.career-slider h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: titillium-regular;
+}
+
+.career-slider h2 span {
+  color: #2893C6;
+  font-weight: 700;
+}
+
+.career-slider .item img {
+  width: 100%;
+}
+
+.career-slider .item {
+  margin: 1rem;
+}
+
+.career-slider .slick-dots li button {
+  border: 1px solid #218FDA;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.career-slider .slick-dots li.slick-active button {
+  background: linear-gradient(0deg, rgba(209, 80, 193, 1) 23%, rgba(232, 87, 145, 1) 50%, rgba(251, 156, 122, 1) 75%);
+  border: none;
+}
+
+.career-slider .slick-dots li button:before {
+  font-size: 0px;
+}
+
+.career-slider .next-arrow {
+  position: absolute;
+  right: 0;
+  border: 1px solid #218FDA;
+  top: 50%;
+  margin-top: -35px;
+}
+
+.career-slider .prev-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  border: 1px solid #218FDA;
+  margin-top: -35px;
+}
+
+.career-slider .slick-arrow {
+  padding: 16px 8px;
+  border: 1px solid #218FDA;
+  border-radius: 6px;
+}
+
+.career-slider .slick-arrow:hover {
+  padding: 16px 8px;
+  border-radius: 6px;
+}
+
+.career-slider .bi-arrow-right::before {
+  color: #218FDA;
+}
+
+.career-slider .bi-arrow-left::before {
+  color: #218FDA;
+}
+
+.career-roles {
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.career-roles h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-family: titillium-regular;
+  color: var(--black-color);
+  text-align: left;
+}
+
+.career-roles h2 span {
+  color: #218FDA;
+  font-family: titillium-regular;
+  font-weight: 600;
+}
+
+.latest-featured h3 {
+  font-size: 20px;
+  color: var(--black-color);
+  font-family: titillium-regular;
+  font-weight: 600;
+}
+
+.latest-featured p {
+  font-size: 16px;
+  color: var(--black-color);
+  font-family: titillium-regular;
+}
+
+.latest-featured {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-left: 1rem;
+  border: 1px solid #218FDA;
+  margin-bottom: 2rem;
+}
+
+.latest-featured span {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: linear-gradient(0deg, rgba(209, 80, 193, 1) 23%, rgba(232, 87, 145, 1) 50%, rgba(251, 156, 122, 1) 75%);
+  border-radius: 8px;
+  padding: 4px 6px;
+  color: var(--white-color);
+}
+
+.latest-featured.active {
+  background-color: #E9F8FF;
+}
+
+.latest-featured:hover {
+  background-color: #E9F8FF;
+}
+
+.slide {
+  margin: 1rem;
+}
+
+.career-roles .slick-dots li button {
+  border: 1px solid #218FDA;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.career-roles .slick-dots li.slick-active button {
+  background: linear-gradient(0deg, rgba(209, 80, 193, 1) 23%, rgba(232, 87, 145, 1) 50%, rgba(251, 156, 122, 1) 75%);
+  border: none;
+}
+
+.career-roles .slick-dots li button:before {
+  font-size: 0px;
+}
+
+.job-application {
+  position: relative;
+}
+
+.about-hide {
+  overflow-x: hidden;
+}
+
+.job-bg {
+  padding: 4rem 1rem 6rem 5rem;
+}
+
+.job-application::before {
+  content: '';
+  position: absolute;
+  background-color: #D5ECF6;
+  width: 1000px;
+  height: 100%;
+
+  z-index: -1;
+  border-top: 16px solid #2893C6;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.job-application h2 {
+  font-size: 50px;
+  font-family: titillium-regular;
+}
+
+.job-application p {
+  font-size: 18px;
+  margin: 1rem 0 2rem 0;
+  font-family: titillium-regular;
+  color: var(--black-color);
+}
+
+.job-application .form-control {
+  border: none;
+  padding: 14px 16px;
+}
+
+.job-application .form-control::placeholder {
+  color: var(--black-color);
+}
+
+.job-application .form-select {
+  width: 100%;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.job-application .form-select:focus {
+  box-shadow: none;
+}
+
+.custom-file-button input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.custom-file-button input[type="file"] {
+  margin-left: -2px !important;
+}
+
+.custom-file-button input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+.job-application .input-group-text {
+  background-color: #2893C6;
+  color: var(--white-color);
+}
+
+.job-application .input-group-text {
+  position: relative;
+}
+
+.job-application .input-group-text::before {
+  content: '';
+  background-image: url(../img/about-us/upload-arrow.png);
+  background-repeat: no-repeat;
+  width: 12px;
+  object-fit: contain;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+}
+
+.job-application .input-group-text {
+  padding: 14px 14px 14px 32px;
+  border: none;
+}
+
+/* ------------- Responsive -------------- */
+
+@media (min-width: 1680px) and (max-width: 1900px) {
+  .careers-hero {
+    padding: 24rem 0 6rem 0;
+  }
+
+  .mart {
+    padding: 22rem 0 5rem 0;
+  }
+
+  .mart .btn-mart {
+    margin-top: 3rem;
+  }
+
+  .mart .venture-content h3 {
+    margin-bottom: 0px;
+    font-size: 38px;
+  }
+
+  .mart h2 {
+    font-size: 32px;
+  }
+
+  .mart p {
+    width: 40%;
+  }
+
+  .mart .btn-mart {
+    font-size: 14px;
+    width: 120px;
+    margin-top: 8rem;
+
+  }
+
+  /* ------------- List your business ------------ */
+
+
+
+  .bridge {
+    padding: 11rem 0;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1679px) {
+  .venture-bg {
+    padding: 7rem 0;
+  }
+
+  .selin-bg {
+    padding: 15rem 0 8rem 0;
+  }
+
+  .venture-content img {
+    width: 50%;
+  }
+
+  .mart {
+    padding: 18rem 0 2rem 0;
+  }
+
+  .mart .btn-mart {
+    margin-top: 3rem;
+  }
+
+  .mart .venture-content h3 {
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+
+  .mart h2 {
+    font-size: 20px;
+  }
+
+  .mart p {
+    width: 30%;
+  }
+
+  .mart .btn-mart {
+    font-size: 14px;
+    width: 120px;
+    margin-top: 5rem;
+
+  }
+
+  .careers-hero {
+    padding: 17rem 0 7rem 0;
+  }
+
+  .leadership {
+    padding: 13rem 0 4rem 0;
+  }
+
+  .philosophy-item {
+    padding: 15rem 0 6rem 0;
+  }
+
+  .bridge {
+    padding: 8rem 0;
+  }
+}
+
+/* ============= 1280px to 1400px ============ */
+
+@media (min-width: 1280px) and (max-width: 1400px) {
+
+  /* ----- About Us ---- */
+  .leadership_content h1 {
+    font-size: 42px;
+  }
+
+  .latest-featured {
+    height: 195px;
+    ;
+  }
+
+  .leadership {
+    padding: 11rem 0 6rem 0;
+  }
+
+  .philosophy-text h2 {
+    font-size: 42px;
+  }
+
+  .philosophy-item {
+    padding: 22rem 0 8rem 0;
+  }
+
+  .venture-content img {
+    width: 50%;
+  }
+
+  .venture-bg {
+    padding: 5rem 0;
+  }
+
+  .bridge {
+    padding: 8rem 0;
+  }
+
+  .selin-bg {
+    padding: 15rem 0 9rem 0;
+  }
+
+  .venture-content h2 {
+    font-size: 34px;
+  }
+
+  .selin-bg p {
+    padding: 1rem 0;
+  }
+
+  .venture-bg .btn {
+    margin: 1rem 0;
+  }
+
+  .mart {
+    padding: 16rem 0 2rem 0;
+  }
+
+  .mart .btn-mart {
+    margin-top: 3rem;
+  }
+
+  .mart .venture-content h3 {
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+
+  .mart h2 {
+    font-size: 20px;
+  }
+
+  .mart p {
+    width: 30%;
+  }
+
+  .mart .btn-mart {
+    font-size: 14px;
+    width: 120px;
+    margin-top: 5rem;
+
+  }
+
+  .careers-hero {
+    padding: 16rem 0 5rem 0;
+  }
+
+  .careers-content h2 {
+    font-size: 42px;
+  }
+
+  .career-features-content h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .philosophy-item {
+    padding: 14rem 0 7rem 0;
+  }
+
+  .philosophy-text h1 {
+    font-size: 42px;
+  }
+}
+
+/* ============= 1200px to 1279px ============ */
+
+@media (min-width: 1200px) and (max-width: 1279px) {
+
+  /* ----------- About Us ------------ */
+  .latest-featured {
+    height: 195px;
+    ;
+  }
+
+  .leadership {
+    padding: 8rem 0 5rem 0;
+  }
+
+  .leadership_content h1 {
+    font-size: 42px;
+  }
+
+  .philosophy-item {
+    padding: 13rem 0 1rem 0;
+  }
+
+  .philosophy-text h1 {
+    font-size: 42px;
+  }
+
+  .venture-content img {
+    width: 50%;
+  }
+
+  .venture-content hr {
+    margin: 1rem 0;
+  }
+
+  .venture-bg {
+    padding: 5rem 0;
+  }
+
+  .bridge {
+    padding: 6rem 0;
+  }
+
+  .selin-bg {
+    padding: 16rem 0 8rem 0;
+  }
+
+  .selin-bg .venture-content {
+    margin-top: 3rem;
+  }
+
+  .venture-content h2 {
+    font-size: 34px;
+  }
+
+  .selin-bg p {
+    padding: 1rem 0;
+  }
+
+  .venture-bg .btn {
+    margin: 1rem 0;
+  }
+
+  .mart {
+    padding: 15rem 0 2rem 0;
+  }
+
+  .mart .btn-mart {
+    margin-top: 3rem;
+  }
+
+  .mart .venture-content h3 {
+    margin-bottom: 0px;
+    font-size: 24px;
+  }
+
+  .mart h2 {
+    font-size: 18px;
+  }
+
+  .mart p {
+    width: 30%;
+  }
+
+  .mart .btn-mart {
+    font-size: 12px;
+    width: 100px;
+
+  }
+
+  .careers-hero {
+    padding: 13rem 0 4rem 0;
+  }
+
+  .careers-content h2 {
+    font-size: 42px;
+  }
+
+  .career-features-content h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .selin-bg .venture-content h2 {
+    font-size: 32px;
+    margin-top: 0rem;
+  }
+
+}
+
+/* ========================================= 1024px to 1199px ========================= */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  /* ----------- About Us ------------ */
+
+  .founders-content img {
+    width: 411px;
+    height: 395px;
+  }
+
+  .latest-featured {
+    height: 175px;
+    ;
+  }
+
+  .leadership {
+    padding: 6rem 0 5rem 0;
+  }
+
+  .leadership_content h1 {
+    font-size: 34px;
+  }
+
+  .philosophy-item {
+    padding: 8rem 0 6rem 0;
+  }
+
+  .philosophy-text h1 {
+    font-size: 36px;
+  }
+
+  .venture-content img {
+    width: 50%;
+  }
+
+  .venture-content hr {
+    margin: 1rem 0;
+  }
+
+  .venture-content h2 {
+    font-size: 24px;
+  }
+
+  .venture-bg {
+    padding: 6rem 0;
+  }
+
+  .selin-bg {
+    padding: 13rem 0 6rem 0;
+  }
+
+  .selin-bg .venture-content {
+    margin-top: 3rem;
+  }
+
+  .venture-content p {
+    font-size: 14px;
+  }
+
+  .selin-bg .venture-content h2 {
+    font-size: 28px;
+    margin-top: 0rem;
+  }
+
+  .selin-bg p {
+    padding: 1rem 0;
+  }
+
+  .bridge {
+    padding: 8rem 0;
+  }
+
+  .venture-bg .btn {
+    margin: 1rem 0;
+  }
+
+  .mart {
+    padding: 12rem 0 6rem 0;
+  }
+
+  .mart .btn-mart {
+    margin-top: 3rem;
+  }
+
+  .mart .venture-content h3 {
+    margin-bottom: 0px;
+    font-size: 24px;
+  }
+
+  .mart h2 {
+    font-size: 18px;
+  }
+
+  .mart p {
+    width: 30%;
+  }
+
+  .mart .btn-mart {
+    font-size: 12px;
+    width: 100px;
+
+  }
+
+  .careers-hero {
+    padding: 11rem 0 3rem 0;
+  }
+
+  .careers-content h2 {
+    font-size: 34px;
+  }
+
+  .career-features-content h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .career-features-content p {
+    font-size: 14px;
+  }
+
+  .career-slider h2 {
+    font-size: 36px;
+  }
+
+  .job-bg {
+    padding: 4rem 1rem 4rem 1rem;
+  }
+
+
+  .job-application h2 {
+    font-size: 36px;
+  }
+}
+
+ /* ------- Contact Us --------- */
+
+
+ .contact .contact-loc iframe {
+  border: 16px solid var(--white-color);
+  width: 100%;
+  border-radius: 12px;
+  height: 430px;
+}
+
+.contact {
+  margin: 4rem 0 4rem 0;
+}
+
+.contact-breadcrumbs {
+  margin-top: -5rem;
+}
+
+.main-contact {
+  background-color: #F5F5F5;
+}
+
+.contact-hero {
+  padding: 0;
+}
+
+.contact h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.contact hr {
+  opacity: 1;
+  margin: 10px 0 32px 0;
+  height: 1px;
+  color: var(--primary-color);
+}
+
+.contact-links a {
+  display: block;
+  color: var(--black-color);
+}
+
+.contact h3 {
+  margin: 10px 0;
+  color: var(--primary-color);
+  font-size: 24px;
+
+
+}
+
+.contact p {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.contact-links a i {
+  margin-right: 10px;
+  color: var(--secondary-color)  ;
+}
+
+.contact .dropdown {
+  width: 100%;
+}
+
+.contact .form-select {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ACACAC;
+  border: 1px solid #ACACAC;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.contact .form-select:focus {
+  box-shadow: none;
+  border: 1px solid #ACACAC;
+
+}
+
+.contact .form-control {
+  background-color: #F9F9F9;
+  border: 1px solid #ACACAC;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.contact .form-control:focus{
+  box-shadow: none;
+}
+.contact .form-control::placeholder {
+  color: #ACACAC;
+  opacity: 1;
+}
+
+.contact .btn-check:focus+.btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+
+/* -------- Faq---------- */
+.faq-bg{
+  background-color: #F5F5F5;
+}
+.faq .accordian-btn-bg {
+  background-color: #e2e2e2;
+  padding: 4rem 1em;
+  border-radius: 12px;
+}
+.faq-banner{
+  padding:0;
+}
+.faq {
+  padding: 0rem 0 3rem 0;
+}
+
+.faq .accordion {
+  margin-bottom: 4rem;
+}
+
+.faq .accordion-item {
+  margin-bottom: 25px;
+  border-radius: 16px;
+  font-weight: 600;
+border: none;
+}
+.faq  .accordion-body{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq .accordion-button:focus,
+.accordion-button:active,
+.accordion-button.active,
+.accordion-button:focus:active {
+  box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+
+  background-color: var(--white-color);
+  box-shadow: none;
+
+}
+
+.faq .accordion-button::after {
+  order: 1;
+  margin-left: auto;
+  margin-right: 0.5em;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  background-size: 12px;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+  order: 1;
+  margin-left: auto;
+  margin-right: 0.5em;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  background-color: white;
+}
+
+.faq  .accordion-button {
+  padding: 1.5rem 1.25rem !important;
+  border-radius: 12px !important;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,63 @@
+.institute-compare-sec {
+  .compare-field {
+    text-align: center;
+    // padding: 29px 5px 0px;
+    border: 1px solid $blue;
+    padding: 2rem 6px 1rem 6px;
+    position: relative;
+    img {
+      max-width: 60px;
+    }
+    p {
+      color: $blue;
+    }
+    .institute-compare-box {
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      i {
+        position: absolute;
+        top: 0;
+        margin: 4px;
+        right: 0;
+      }
+    }
+  }
+  .compare-list{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+      .col-12{
+        border: 1px solid #ddd;
+        padding: 14px 10px;
+        h2{
+          font-size: 18px;
+        }
+         p{
+          font-size: 16px;
+          @include down-sm{
+            font-size: 12px;
+          }
+         }
+      }
+      .col-4{
+        border: 1px solid #ddd;
+        padding: 10px;
+        p{
+          font-size: 16px;
+          word-wrap: break-word;
+          @include down-sm{
+            font-size: 12px;
+          }
+         }
+         i{
+          color: $yellow;
+          @include down-sm{
+            font-size: 12px;
+          }
+         }
+      }
+    }
+  }
+

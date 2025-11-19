@@ -1,0 +1,149 @@
+/* ------------Side Menu Modal----------- */
+
+.side_menu .modal-dialog {
+  margin: 0;
+  max-width: 100%;
+}
+
+.side_menu .modal-content {
+  height: 100vh;
+  border-radius: 0;
+  padding: 0;
+  overflow-y: scroll;
+  border: none;
+}
+
+.side_menu .modal-header {
+  border: 0;
+  margin-top: 1rem;
+}
+
+.side_menu .modal-title {
+  color: $blue;
+  font-weight: 600;
+  font-size: 18px;
+  @include down-sm {
+    font-size: 16px;
+  }
+}
+
+.side_menu .modal-body h2 {
+  font-size: 18px;
+  color: $blue;
+  background-image: linear-gradient(to right, #e8ee96, #fff);
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  @include down-sm{
+    font-size: 16px;
+  }
+  @include down-ss{
+    font-size: 14px;
+  }
+}
+
+.side_menu .cate_list img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  padding: 3px;
+}
+
+.side_menu .cate_list li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.side_menu .cate_list p {
+  color: $black;
+  font-weight: 500;
+  font-size: 18px;
+  @include down-sm{
+    font-size: 16px;
+  }
+  @include down-ss{
+    font-size:12px
+  }
+}
+
+.side_menu .social i {
+  color: $blue;
+  background-color: $yellow;
+  padding: 1px 3px;
+  margin-bottom: 6px;
+}
+
+.side_menu .social li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-body {
+  padding: 0;
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+}
+
+.side_menu .social {
+  margin-top: 10px;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.side_menu .social p {
+  font-size: 16px;
+  font-weight: 500;
+  @include down-ss{
+    font-size: 12px;
+  }
+}
+
+.side_menu .cate_list span {
+  text-indent: 1;
+}
+
+.side_menu hr {
+  border-bottom: dotted 2px $blue;
+  margin: 1rem 0;
+  opacity: 1;
+  background-color: $white;
+}
+
+.m-contact a {
+  display: block;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  @include down-sm{
+    font-size: 16px;
+  }
+}
+
+.m-contact .blue-btn {
+  display: inline-block;
+  padding: 6px 0;
+  margin-top: 28px;
+  font-size: 18px;
+  @include down-sm{
+    font-size: 16px;
+  }
+}
+
+.m-contact h3 {
+  color: $blue;
+  font-weight: 600;
+  font-size: 18px;
+  @include down-sm{
+    font-size: 16px;
+  }
+}
+
+.m-contact img {
+  width: 16px;
+  object-fit: contain;
+  height: 16px;
+  margin-right: 10px;
+}

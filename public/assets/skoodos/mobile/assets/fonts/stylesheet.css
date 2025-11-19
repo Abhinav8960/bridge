@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uibold_italic';
+    src: url('segoe_ui_bold_italic-webfont.woff2') format('woff2'),
+         url('segoe_ui_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uiitalic';
+    src: url('segoe_ui_italic-webfont.woff2') format('woff2'),
+         url('segoe_ui_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uiregular';
+    src: url('segoe_ui-webfont.woff2') format('woff2'),
+         url('segoe_ui-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoe_uibold';
+    src: url('segoe_ui_bold-webfont.woff2') format('woff2'),
+         url('segoe_ui_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

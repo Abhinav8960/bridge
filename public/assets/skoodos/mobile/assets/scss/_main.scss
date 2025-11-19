@@ -1,0 +1,145 @@
+.section--heading {
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "robotomedium";
+    margin-bottom: 24px;
+    @include down-sm {
+      font-size: 18px;
+    }
+    @include down-ss {
+      font-size: 16px;
+    }
+  }
+}
+
+.sub-heading {
+  h2 {
+    position: relative;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 3px;
+      background-color: $yellow;
+      bottom: 0;
+      margin-bottom: -1rem;
+      @include down-sm {
+        margin-bottom: -10px;
+        width: 80px;
+      }
+      @include down-ss {
+        margin-bottom: -10px;
+        width: 60px;
+      }
+    }
+  }
+}
+.select2-container--default .select2-selection--single {
+  border: 1px solid $blue;
+  height: 42px !important;
+}
+.select2-container{
+  width: 200px !important;
+  z-index: 9999;
+
+
+  @include down-sm{
+  width: 150px !important;
+}
+}
+  .select2-selection__rendered {
+  color: $blue;
+  width: 200px;
+  line-height: 42px !important;
+  @include down-sm {
+    width: 130px;
+    font-size: 14px;
+  }
+}
+
+.btn-yellow {
+  font-size: 18px;
+  color: $blue;
+  background-color: $yellow;
+  display: inline-block;
+  width: 160px;
+  &:hover {
+    background-color: $blue;
+    color: $yellow;
+  }
+}
+
+.btn-blue{
+  font-size: 18px;
+  color: $yellow;
+  background-color: $blue;
+  width: 160px;
+  display: inline-block;
+  &:hover {
+    background-color: $yellow;
+    color: $blue;
+  }
+}
+
+.btn-white {
+  border: 1px solid $blue;
+  background-color: transparent;
+  color: $blue;
+  width: 160px;
+  &:hover {
+    background-color: $blue;
+    color: $blue;
+  }
+}
+
+.view-btn {
+  border: 1px solid #004d85;
+  font-size: 18px;
+  color: #004d85;
+  border-radius: 6px;
+  display: flex;
+  padding: 12px 30px;
+  align-items: center;
+  width: 110px;
+  justify-content: center;
+  &.active {
+    background-color: $blue;
+    color: $yellow;
+  }
+  @include down-sm {
+    width: 80px;
+    padding: 6px 20px;
+    font-size: 16px;
+  }
+  @include down-ss {
+    width: 18%;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+.more-btn {
+  margin: 2rem 0;
+  text-align: center;
+  color: $blue;
+  @include down-ss {
+    margin: 1rem 0;
+  }
+
+  a {
+    font-size: 18px;
+    color: $blue;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: inline-block;
+    @include down-ss {
+      font-size: 14px;
+    }
+  }
+}

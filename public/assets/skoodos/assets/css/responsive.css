@@ -1,0 +1,1343 @@
+/* ============= 1680px to 1900px ============ */
+
+@media (min-width:1680px) and (max-width:1900px) {
+  .hero {
+
+    margin-top: -116px;
+    padding-top: 20rem;
+    padding-bottom: 12rem;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .header .logo img {
+    width: 90%;
+  }
+
+  /* -------------=================== Entrance Exam Categories ==============------------- */
+
+  .categories-search {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+
+
+}
+
+
+
+/* ============= 1440px to 1679px ============ */
+
+@media (min-width:1440px) and (max-width:1679px) {
+
+  .hero {
+    margin-top: -116px;
+    padding-top: 16rem;
+    padding-bottom: 11rem;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .header .logo img {
+    width: 90%;
+  }
+
+  /* -----============Entrance Exam Categories =======-------- */
+
+  .categories-search {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+
+
+  /* --------- Explore Listing ------------- */
+
+  .explore-top .explore-listing-bg {
+    padding: 45px 48px;
+
+  }
+
+  /* -------- Enroll ----------- */
+
+  .orgnization-items {
+    padding: 0 2rem;
+  }
+
+  .orgnization-items .item-content h3 {
+    font-size: 18px;
+  }
+
+  .orgnization-items .item-content p {
+    font-size: 16px;
+  }
+
+}
+
+/* ========================================= 1366px to 1439px ========================= */
+
+@media (min-width:1366px) and (max-width:1439px) {
+
+  .hero {
+    margin-top: -116px;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+
+  .header .logo img {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .institute-name {
+    font-size: 17px;
+  }
+
+  .result-cards .card {
+    width: 249px;
+  }
+
+  .app-store-links img {
+    height: 2.5rem;
+  }
+
+  /* ------============= Entrance Exam Categories ========-------- */
+
+  .categories-search {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+
+  .top-banner h1 {
+    font-size: 36px;
+  }
+
+  /* ----------============= Foreign Exam Categories ==========---------- */
+
+
+
+  .view-btn {
+    font-size: 12px;
+
+  }
+
+  /* -------------------------- Explore Listing -------------------- */
+  .filter-title-head {
+    font-size: 16px;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    font-size: 14px;
+  }
+
+  .explore-top .explore-listing-bg {
+    padding: 45px 48px;
+
+  }
+
+  #breadcrumbs li a {
+    color: var(--silver);
+    font-size: 12px;
+  }
+
+  .breadcrumb-item.active {
+    font-size: 12px;
+  }
+
+  .search_cities .cities-name li {
+    font-size: 14px;
+  }
+
+  .search_cities .form-control {
+    padding: 8px 10px 8px 42px;
+    font-size: 14px;
+  }
+
+  .cbxTree-txt {
+    font-size: 14px;
+  }
+
+  .coaching-institutes .filter-title {
+    font-size: 1rem;
+  }
+
+  .filter-title a {
+    font-size: 14px;
+  }
+
+  .filter_exams h5 {
+    font-size: 1rem;
+  }
+
+  .checkbox label {
+    font-size: 14px;
+  }
+
+  .coaching-institutes h2 {
+    font-size: 20px;
+  }
+
+  .explore-institute-detail li {
+    font-size: 12px;
+  }
+
+  .listing-border-box .rating li {
+    font-size: 12px;
+  }
+
+  .yellow-btn {
+    padding: 10px 42px;
+    font-size: 12px;
+  }
+
+  .listing-border-box .view-btn {
+    padding: 10px 37px;
+    font-size: 12px;
+  }
+
+  .institute-text p {
+    font-size: 14px;
+  }
+
+  .institute-featured-box .institute-details h3 {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg h4 {
+    font-size: 14px;
+  }
+
+  .listing-institute-bg p {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg img {
+    width: 35%;
+    margin-bottom: 5px;
+  }
+
+  /* ---------------- Login ------------------- */
+  .login-right-bg {
+    padding: 0;
+
+  }
+
+  .login-left {
+    padding: 3rem 4rem;
+
+  }
+
+  .login-left-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .login-left-box p {
+    font-size: 18px;
+  }
+
+
+  /* --------------- Register------------- */
+  .register .login-left {
+    padding: 3rem 2rem;
+  }
+
+  .register .login_form {
+    margin-top: 10px !important;
+  }
+
+  .register .login-left-box .form-control {
+    font-size: 10px;
+  }
+
+  .register .login_form .login_input {
+    margin-top: 14px;
+  }
+
+  .register .form-check-input[type="checkbox"] {
+    padding: 4px;
+  }
+
+  .register .form-check label {
+    font-size: 10px;
+  }
+
+  .register .login-left-box .yellow-btn {
+    font-size: 10px;
+  }
+
+  .register .login_buttons {
+    font-size: 10px;
+  }
+
+  .register .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  /* --------------- Forget Password------------- */
+
+  .forget_password .login-left {
+    padding: 8rem 3rem;
+  }
+
+  /* -------------Microsite General------------ */
+
+  .microsite-bg {
+    height: 222px;
+  }
+
+  .micro-institute-deatils .yellow-btn {
+    width: 260px;
+  }
+
+  .micro-institute-deatils .blue-btn {
+    width: 260px;
+  }
+
+  .wishlist-icon a {
+    padding: 2px 21px;
+  }
+
+  .admsn-screen-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  .admsn-screen-bg {
+    padding: 44px 180px 21px 22px;
+  }
+
+  .mock-text-bg {
+    padding: 44px 180px 21px 22px;
+  }
+
+  .mock-text-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  /* ------------------- Faculty --------------- */
+
+  .m-faculty .card-body p {
+    text-align: justify;
+    margin-top: 7px;
+    font-size: 14px;
+  }
+
+  /* ---------------- Videos------------ */
+  .videos .card {
+    height: 180px;
+  }
+
+  .videos .card iframe {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* ----- Enroll----- */
+
+  .dashed-line {
+    margin: 3rem auto;
+
+  }
+
+  /* -------- Enroll ----------- */
+
+  .orgnization-items {
+    padding: 0 2rem;
+  }
+
+  .orgnization-items .item-content h3 {
+    font-size: 18px;
+  }
+
+  .orgnization-items .item-content p {
+    font-size: 16px;
+  }
+
+  .enroll-hero .enroll-hero-form {
+    padding: 1rem 0 1rem 0rem;
+    padding: 8px 10px;
+  }
+
+  .enroll-hero .enroll-hero-form .form-control {
+    font-size: 12px;
+  }
+
+  .enroll-hero .enroll-hero-right h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .btn-wrapper .yellow-btn {
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+
+  .enroll-heading h2 {
+    font-size: 36px;
+  }
+
+  .enroll-heading p{
+    font-size: 20px;
+  }
+  .enroll-banner-text h2{
+    font-size: 36px;
+  }
+  .enroll-banner-text p{
+    font-size: 20px;
+  }
+
+
+}
+
+/* ========================================= 1280px to 1365px ========================= */
+
+@media (min-width:1280px) and (max-width:1365px) {
+
+  .hero {
+    margin-top: -116px;
+    padding-top: 11rem;
+    padding-bottom: 12rem;
+  }
+
+  .header .logo img {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .result-cards h4 {
+    font-size: 13px;
+  }
+
+  .result-cards a {
+    font-size: 12px;
+  }
+
+  .result-cards .card {
+    width: 249px;
+  }
+
+  .institute-name {
+    font-size: 17px;
+  }
+
+  .view-btn {
+    font-size: 12px;
+
+  }
+
+  .app-store-links img {
+    height: 2.5rem;
+  }
+
+  /* -------========== Entrance Exam Categories ==========--------- */
+
+  .categories-search {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+
+  .top-banner h1 {
+    font-size: 36px;
+  }
+
+
+
+
+  /* ----------============= Foreign Exam Categories ==========---------- */
+
+  /* -------------------------- Explore Listing -------------------- */
+  .filter-title-head {
+    font-size: 16px;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    font-size: 14px;
+  }
+
+  .explore-listing-bg {
+    padding: 45px 48px
+  }
+
+  #breadcrumbs li a {
+    color: var(--silver);
+    font-size: 12px;
+  }
+
+  .breadcrumb-item.active {
+    font-size: 12px;
+  }
+
+  .search_cities .cities-name li {
+    font-size: 14px;
+  }
+
+  .search_cities .form-control {
+    padding: 8px 10px 8px 42px;
+    font-size: 14px;
+  }
+
+  .cbxTree-txt {
+    font-size: 14px;
+  }
+
+  .coaching-institutes .filter-title {
+    font-size: 1rem;
+  }
+
+  .filter-title a {
+    font-size: 14px;
+  }
+
+  .filter_exams h5 {
+    font-size: 1rem;
+  }
+
+  .checkbox label {
+    font-size: 14px;
+  }
+
+  .coaching-institutes h2 {
+    font-size: 20px;
+  }
+
+  .explore-institute-detail li {
+    font-size: 12px;
+  }
+
+  .listing-border-box .rating li {
+    font-size: 12px;
+  }
+
+  .yellow-btn {
+    padding: 10px 42px;
+    font-size: 12px;
+  }
+
+  .listing-border-box .view-btn {
+    padding: 10px 37px;
+    font-size: 12px;
+  }
+
+  .institute-text p {
+    font-size: 14px;
+  }
+
+  .institute-featured-box .institute-details h3 {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg h4 {
+    font-size: 14px;
+  }
+
+  .listing-institute-bg p {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg img {
+    width: 35%;
+    margin-bottom: 5px;
+  }
+
+  /* ------------------- Login ----------------- */
+
+  .login-left-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .login-left {
+    padding: 5rem 4rem;
+  }
+
+  .login-left-box p {
+    font-size: 14px;
+  }
+
+  .login_form {
+    margin-top: 2rem;
+  }
+
+  .login-left h6 {
+    font-size: 14px;
+    color: var(--black);
+  }
+
+  .login-left-box .form-control {
+    font-size: 12px;
+  }
+
+  .login_forgot a {
+    font-size: 14px;
+  }
+
+  .login-left-box .yellow-btn {
+    font-size: 14px;
+  }
+
+  .login_buttons {
+    font-size: 12px;
+  }
+
+  /* -------------- Login Otp ------------- */
+  .login-otp-contain .login-left {
+    padding: 4rem 4rem;
+  }
+
+  .login-left .otp_input input {
+    width: 60px;
+    line-height: 38px;
+  }
+
+  /* --------------- Register------------- */
+  .register .login-left {
+    padding: 3rem 2rem;
+  }
+
+  .register .login_form {
+    margin-top: 10px !important;
+  }
+
+  .register .login-left-box .form-control {
+    font-size: 10px;
+  }
+
+  .register .login_form .login_input {
+    margin-top: 14px;
+  }
+
+  .register .form-check-input[type="checkbox"] {
+    padding: 4px;
+  }
+
+  .register .form-check label {
+    font-size: 10px;
+  }
+
+  .register .login-left-box .yellow-btn {
+    font-size: 10px;
+  }
+
+  .register .login_buttons {
+    font-size: 10px;
+  }
+
+  .register .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  /* --------------- Forget Password------------- */
+  .forget_password .login-left {
+    padding: 9rem 3rem;
+  }
+
+  /* -------------Microsite General------------ */
+  .microsite-bg {
+    height: 222px;
+  }
+
+  .micro-institute-deatils .yellow-btn {
+    width: 260px;
+  }
+
+  .micro-institute-deatils .blue-btn {
+    width: 260px;
+  }
+
+  .wishlist-icon a {
+    padding: 2px 21px;
+  }
+
+  .admsn-screen-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  .admsn-screen-bg {
+    padding: 44px 180px 21px 22px;
+  }
+
+  .mock-text-bg {
+    padding: 44px 180px 21px 22px;
+  }
+
+  .mock-text-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  /* ---------------- Videos------------ */
+  .videos .card {
+    height: 180px;
+  }
+
+  .videos .card iframe {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* ------------------- Faculty --------------- */
+
+  .m-faculty .card-body p {
+    text-align: justify;
+    margin-top: 7px;
+    font-size: 12px;
+  }
+
+  /* ----- Enroll----- */
+
+  .dashed-line {
+    margin: 3rem auto;
+
+  }
+
+  .wish-list .card .institute-name {
+    font-size: 18px;
+  }
+
+  /* -------- Enroll ----------- */
+
+  .orgnization-items {
+    padding: 0 2rem;
+  }
+
+  .orgnization-items .item-content h3 {
+    font-size: 18px;
+  }
+
+  .orgnization-items .item-content p {
+    font-size: 16px;
+  }
+
+
+  .enroll-hero .enroll-hero-form {
+    padding: 1rem 0 1rem 0rem;
+    padding: 8px 10px;
+  }
+
+  .enroll-hero .enroll-hero-form .form-control {
+    font-size: 12px;
+  }
+
+  .enroll-hero .enroll-hero-right h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .btn-wrapper .yellow-btn {
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+
+  .enroll-heading h2 {
+    font-size: 36px;
+  }
+
+  .enroll-heading p{
+    font-size: 20px;
+  }
+  .enroll-banner-text h2{
+    font-size: 36px;
+  }
+  .enroll-banner-text p{
+    font-size: 20px;
+  }
+  .enroll-hero .enroll-hero-left h1 {
+    font-size: 26px;
+  }
+  .focus-section p {
+    font-size: 16px;
+}
+}
+
+/* ========================================= 1024px to 1279px ========================= */
+
+@media (min-width:1024px) and (max-width:1279px) {
+
+  .hero {
+    margin-top: -98px;
+    padding-top: 11rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero .search_box .form-control {
+    font-size: 14px;
+  }
+
+  .header .logo img {
+    width: 70%;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    font-size: 14px !important;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .result-cards h4 {
+    font-size: 10px;
+  }
+
+  .result-cards a {
+    font-size: 10px;
+  }
+
+  .result-cards .card {
+    width: 204px;
+  }
+
+  .viewall {
+    font-size: 14px;
+  }
+
+  .institute-name {
+    font-size: 14px;
+  }
+
+  .featured-institutes .finstitute-img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .featured-institutes .p-4 {
+    padding: 1rem !important;
+  }
+
+  .featured-institutes .finstitute-top {
+    padding-top: 56px !important;
+  }
+
+  .featured-institutes .finstitute-detail li {
+
+    font-size: 12px;
+  }
+
+  .finstitute-detail {
+    padding-left: 10px !important;
+  }
+
+  .rating li {
+    font-size: 12px;
+  }
+
+  .view-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .featured-institutes .card-body .card-text {
+    font-size: 12px;
+  }
+
+  #footer .footer_desc p {
+    font-size: 12px;
+  }
+
+  #footer a {
+    font-size: 12px;
+  }
+
+  .app-store-links img {
+    height: 2rem;
+  }
+
+  /* ---------============ Entrance Exam Categories =======---------- */
+
+  .categories-search {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+
+  .top-banner h1 {
+    font-size: 32px;
+  }
+
+
+
+  /* ----------============= Foreign Exam Categories ==========---------- */
+
+
+  /* -------------------------- Explore Listing -------------------- */
+
+  .filter-title-head {
+    font-size: 16px;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    font-size: 14px;
+  }
+
+  .explore-listing-bg {
+    padding: 15px 48px;
+  }
+
+  #breadcrumbs li a {
+    color: var(--silver);
+    font-size: 12px;
+  }
+
+  .breadcrumb-item.active {
+    font-size: 12px;
+  }
+
+  .search_cities .cities-name li {
+    font-size: 14px;
+  }
+
+  .search_cities .form-control {
+    padding: 8px 10px 8px 42px;
+    font-size: 14px;
+  }
+
+  .cbxTree-txt {
+    font-size: 14px;
+  }
+
+  .coaching-institutes .filter-title {
+    font-size: 1rem;
+  }
+
+  .filter-title a {
+    font-size: 14px;
+  }
+
+  .filter_exams h5 {
+    font-size: 1rem;
+  }
+
+  .checkbox label {
+    font-size: 14px;
+  }
+
+  .coaching-institutes h2 {
+    font-size: 20px;
+  }
+
+  .explore-institute-detail li {
+    font-size: 12px;
+  }
+
+  .listing-border-box .rating li {
+    font-size: 12px;
+  }
+
+  .yellow-btn {
+    padding: 10px 40px;
+    font-size: 12px;
+  }
+
+  .listing-border-box .view-btn {
+    padding: 10px 37px;
+    font-size: 12px;
+  }
+
+  .institute-text p {
+    font-size: 14px;
+  }
+
+  .institute-featured-box .institute-details h3 {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg h4 {
+    font-size: 12px;
+  }
+
+  .listing-institute-bg p {
+    font-size: 10px;
+  }
+
+  .listing-institute-bg img {
+    width: 30%;
+    margin-bottom: 5px;
+  }
+
+  /* --------------------------- Login ----------------------- */
+  .login-left-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .login-left {
+    padding: 2rem 4rem;
+  }
+
+  .login-left-box p {
+    font-size: 14px;
+  }
+
+  .login-right-box h2 {
+    font-size: 18px;
+  }
+
+  .login_form {
+    margin-top: 2rem;
+  }
+
+  .login-left h6 {
+    font-size: 14px;
+    color: var(--black);
+  }
+
+  .login-left-box .form-control {
+    font-size: 12px;
+  }
+
+  .login_forgot a {
+    font-size: 14px;
+  }
+
+  .login-left-box .yellow-btn {
+    font-size: 14px;
+  }
+
+  .login_buttons {
+    font-size: 12px;
+  }
+
+  /* --------------- Register------------- */
+
+  .register .login-left {
+    padding: 1rem 2rem;
+  }
+
+  .register .login_form {
+    margin-top: 10px !important;
+  }
+
+  .register .login-left-box .form-control {
+    font-size: 10px;
+  }
+
+  .register .login_form .login_input {
+    margin-top: 14px;
+  }
+
+  .register .form-check-input[type="checkbox"] {
+    padding: 4px;
+  }
+
+  .register .form-check label {
+    font-size: 10px;
+  }
+
+  .register .login-left-box .yellow-btn {
+    font-size: 10px;
+  }
+
+  .register .login_buttons {
+    font-size: 10px;
+  }
+
+  .register .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+
+  /* --------------- Forget Password------------- */
+  .forget_password .login-left {
+    padding: 7rem 2rem;
+  }
+
+
+  /* -----------------Microsite General ------------- */
+  .microsite-bg {
+    height: 186px;
+  }
+
+  .micro-institute-deatils .yellow-btn {
+    width: 213px;
+    font-size: 10px;
+
+  }
+
+  .micro-institute-deatils .blue-btn {
+    width: 213px;
+    font-size: 10px;
+  }
+
+  .wishlist-icon a {
+    padding: 2px 20px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+
+  .m-institute-text li {
+    font-size: 14px;
+  }
+
+  .m-institute-text h1 {
+    font-size: 18px;
+  }
+
+  .micro-tabs .nav-link {
+    font-size: 14px;
+  }
+
+  .micro-tabs .nav-link:hover {
+    font-size: 14px;
+  }
+
+  .micro-heading {
+    font-size: 18px;
+    color: var(--primary);
+  }
+
+  .m-about-institute p {
+    font-size: 14px;
+  }
+
+  .admsn-screen-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  .admsn-screen-bg {
+    padding: 22px 127px 21px 22px;
+  }
+
+  .mock-text-bg {
+    padding: 22px 127px 21px 22px;
+  }
+
+  .mock-text-bg .yellow-btn {
+    margin-top: 1rem;
+  }
+
+  .m-features .card {
+    padding: 0.8rem 1rem;
+    width: 195px;
+  }
+
+  .m-features .card h3 {
+    font-size: 14px;
+  }
+
+  .m-features .card p {
+    font-size: 12px;
+    color: var(--black);
+  }
+
+  .m-leadership p {
+    font-size: 14px;
+  }
+
+  /* ----------------------------- Microsite Course ------------------- */
+
+  .m-stream-detail h4 {
+    font-size: 14px;
+  }
+
+  .m-stream-detail p {
+    font-size: 12px;
+  }
+
+  .m-course-timing-details .fee-discount {
+    width: 128px;
+    height: 35px;
+  }
+
+  .m-stream-icon-bg {
+    padding: 12px 36px 15px 57px;
+  }
+
+  .m-stream-icon-bg p {
+    font-size: 14px;
+  }
+
+  /* --------------- Champions----------------- */
+
+  .student-profile h3 {
+    font-size: 14px;
+  }
+
+  .student-profile p {
+    font-size: 12px;
+  }
+
+  .form-select {
+    font-size: 14px;
+  }
+
+  /* ------------------------ Faculty -------------- */
+
+  .m-faculty .card-body h3 {
+    font-size: 14px;
+  }
+
+  .m-faculty .card-body h4 {
+    font-size: 12px;
+  }
+
+  .m-faculty .card-body p {
+    margin-top: 2px;
+    font-size: 10px;
+  }
+
+  .m-faculty .container-box {
+    padding: 0rem 3rem 6rem 3rem;
+  }
+
+  /* ---------------- Videos------------ */
+  .videos .card {
+    height: 160px;
+  }
+
+  .videos .card iframe {
+    width: 160px;
+    height: 160px;
+  }
+
+  .videos .card-body h3 {
+    font-size: 14px;
+  }
+
+  .videos .card-body p {
+    font-size: 12px;
+  }
+
+
+  /* ---------------------centers------------- */
+
+  .microsite_map iframe {
+    width: 230px;
+    height: 254px;
+  }
+
+  .microsite_centers_details p {
+    font-size: 14px;
+  }
+
+  .microsite_centers_details h3 {
+    font-size: 16px;
+  }
+
+  /* ----------------Alumni------------- */
+
+  .m--alumni .container-box {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+
+  /* ---------- Profile----------- */
+
+  .wishlist-container .featured-institutes .stream p {
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  .dashed-line {
+    margin: 3rem auto;
+
+  }
+
+  /* -------- Enroll ----------- */
+
+  .orgnization-items {
+    padding: 0 2rem;
+  }
+
+  .orgnization-items .item-content h3 {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .orgnization-items .item-content p {
+    font-size: 12px;
+  }
+
+  .orgnization-items .item-content img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .orgnization-item .item-content .logo {
+    width: 120px;
+  }
+
+  .enroll-hero .enroll-hero-form {
+    padding: 1rem 0 1rem 0rem;
+  }
+
+  .enroll-hero .enroll-hero-form .form-control {
+    font-size: 12px;
+  }
+
+  .enroll-hero .enroll-hero-right h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .btn-wrapper .yellow-btn {
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+
+  .enroll-heading h2 {
+    font-size: 32px;
+  }
+
+  .enroll-heading p{
+    font-size: 18px;
+  }
+  .enroll-banner-text h2{
+    font-size: 32px;
+  }
+  .enroll-banner-text p{
+    font-size: 18px;
+  }
+  .enroll-hero .enroll-hero-left h1 {
+    font-size: 24px;
+  }
+  .focus-section p {
+    font-size: 16px;
+}
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .dashed-line {
+    margin: 2rem auto;
+  }
+
+  .profile-enroll-item-bg {
+    padding: 52px 70px;
+  }
+
+  .wish-list .card .institute-name {
+    font-size: 18px;
+  }
+
+  .select2-container {
+    width: 160px !important;
+  }
+
+  .exam-card-item h6 {
+    font-size: 12px;
+  }
+  .recent-blog .card-title{
+    font-size: 12px;
+  }
+  .blog-item-footer .social-img{
+    width: 140px;
+  }
+  .blog-author a{
+    font-size: 14px !important;
+}
+.blog-author span{
+  font-size: 14px;
+}
+.blog-item-footer a{
+  font-size: 14px;
+}
+.focus-section p {
+  font-size: 16px;
+}
+}

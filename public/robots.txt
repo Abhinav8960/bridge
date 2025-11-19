@@ -1,0 +1,28 @@
+# Robots.txt for Skoodos Bridge
+# Author: Skoodos Team
+
+# Allow all user agents, but restrict certain areas
+User-agent: *
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /settings/
+Disallow: /user-data/
+
+# Disallow common temporary or irrelevant files
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /test/
+Disallow: /404.html
+Disallow: /500.html
+
+# Allow public-facing content
+Allow: /public/
+Allow: /resources/
+Allow: /blogs/
+Allow: /schools/
+
+# Sitemap for better indexing
+Sitemap: https://www.skoodosbridge.com/sitemap.xml

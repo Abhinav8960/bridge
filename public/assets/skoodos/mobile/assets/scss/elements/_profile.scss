@@ -1,0 +1,332 @@
+
+ .wishlist-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .select2-selection__rendered {
+    color: $blue !important;
+    line-height: 50px !important;
+    padding-left: 20px !important;
+    @include down-ss {
+      line-height: 40px !important;
+    }
+  }
+  .select2-container {
+    @include down-ss {
+      width: 150px !important;
+    }
+    .select2-selection--single {
+      height: 50px;
+      @include down-ss {
+        height: 40px;
+      }
+    }
+  }
+  .wishlist-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    @include down-ss {
+      gap: 1rem;
+    }
+
+    .m-dropdown {
+      .form-select {
+        border: 1px solid $blue;
+        color: $blue;
+        padding: 10px 64px 10px 20px;
+        width: 250px;
+      }
+    }
+  }
+  .featured-institutes {
+    background-color: transparent;
+    // padding: 2rem 0;
+    .card {
+      margin: 2rem 0;
+    }
+    .card-body {
+      .card-text {
+        padding: 1rem;
+        font-size: 1.1rem;
+        @include down-sm{
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .card .bi-x-lg {
+    display: block;
+    padding: 10px 1.5rem 0px 1.5rem;
+    float: right;
+  }
+  .finstitute-top {
+    padding-top: 1.5rem !important;
+  }
+  .finstitute-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    .rating {
+      li {
+        list-style: none;
+        color: $yellow;
+        font-size: 14px;
+      }
+    }
+    .view-btn {
+      border: 1px solid $blue;
+      font-size: 16px;
+      color: $blue;
+      padding: 12px 34px;
+      border-radius: 6px;
+      display: inline-block;
+      width: auto;
+      @include down-sm{
+        padding: 8px 24px;
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+        padding: 6px 24px;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+  .finstitute-img img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .card {
+    .institute-name {
+      font-size: 18px;
+      color: $blue;
+      @include down-sm{
+        font-size: 16px;
+      }
+      @include down-ss {
+        font-size: 16px;
+      }
+    }
+  }
+  .finstitute-detail {
+    li {
+      text-decoration: none;
+      list-style: none;
+      font-size: 14px;
+      display: flex;
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    i {
+      margin-right: 6px;
+      color: #d3d3d3;
+    }
+  }
+  .stream {
+    p {
+      color: $blue;
+      font-size: 16px;
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    span {
+      color: #858585;
+    }
+  }
+  .empty {
+    img {
+      margin-right: 1rem;
+    }
+    a {
+      font-size: 18px;
+      @include down-ss {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.profile {
+  .accordion-button {
+    font-size: 24px;
+    @include down-sm{
+      font-size: 18px;
+    }
+    @include down-ss{
+      font-size: 16px;
+    }
+    &:focus {
+      z-index: 3 !important;
+      border-color: $grey;
+      outline: 0;
+      box-shadow: none !important;
+    }
+    &:not(.collapsed) {
+      color: $black;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+.enroll-container {
+  margin: 2rem 0;
+  .items{
+    overflow: hidden;
+    margin-bottom: 2rem;
+    .item{
+      overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    }
+  }
+  .enroll-card {
+    padding: 2rem;
+    box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+    border-radius: 12px;
+    @include down-sm {
+      padding: 1rem;
+    }
+    h2 {
+      font-size: 18px;
+      color: $blue;
+      @include down-sm {
+        font-size: 16px;
+      }
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    .discount-img {
+      width: 90%;
+      object-fit: contain;
+      @include down-sm {
+        width: 100%;
+      }
+    }
+  }
+  .dashed-line {
+    opacity: 1;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-top: 2px dotted $grey;
+    background-color: transparent;
+  }
+  .btn-yellow {
+    width: auto;
+    padding: 10px 24px;
+    @include down-sm {
+      font-size: 16px;
+      padding: 6px 24px;
+    }
+    @include down-ss {
+      font-size: 14px;
+      padding: 6px 24px;
+    }
+  }
+}
+
+.change-password {
+  form {
+    .form-control {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 12px;
+      color: var(--black);
+      &:focus{
+        box-shadow: none;
+      }
+      @include down-sm{
+        font-size: 16px;
+      }
+      @include down-sm{
+        font-size: 14px;
+      }
+    }
+    .btn-yellow {
+      width: auto;
+      padding: 10px 40px;
+      @include down-sm {
+        font-size: 16px;
+        padding: 6px 40px;
+      }
+      @include down-ss {
+        font-size: 14px;
+        padding: 6px 40px;
+      }
+    }
+  }
+}
+
+.profile-details{
+  padding: 2rem 0;
+  h2{
+    font-size: 24px;
+    color: $blue;
+    margin-bottom: 1rem;
+    @include down-sm{
+      font-size: 18px;
+    }
+  }
+  h3{
+    font-size: 24px;
+    color: $black;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    @include down-sm{
+      font-size: 18px;
+    }
+  }
+  ul{
+    li{
+      font-size: 18px;
+      margin-bottom: 6px;
+      @include down-sm{
+        font-size: 14px;
+      }
+      span{
+        margin-right: 1rem;
+        color: #d3d3d3;
+      }
+    }
+  }
+}
+
+.profile-link{
+  padding: 3rem 0;
+  a{
+    border-bottom: 1px solid $black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    span{
+      font-weight: 600;
+    }
+    &:hover{
+      color: $blue;
+    }
+  }
+}

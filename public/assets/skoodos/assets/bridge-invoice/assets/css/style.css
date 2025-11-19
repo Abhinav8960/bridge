@@ -1,0 +1,223 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  background-color: #E7E7E7;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+}
+.border-dot {
+  border-bottom: 1px dotted #5f3813;
+}
+
+/* -------- Invoice------ */
+
+.invoice__heading {
+  background-color: #003D70;
+  padding: 0rem 2rem 0 0;
+  box-shadow: -1px 4px 7px -1px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 1;
+}
+
+.invoice__heading__logo{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.invoice__heading__logo img{
+  width: 40%;
+}
+
+.invoice__heading h1 {
+  font-size: 24px;
+  color: #D0DD2A;
+}
+
+.invoice__heading h4 {
+  font-size: 18px;
+  color: #D0DD2A;
+}
+
+.invoice__heading p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.invoice__content__text {
+  background-color: #fff;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1.5rem;
+}
+.invoice-details h3{
+  font-size: 20px;
+  color: #003D70 !important;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.invoice__content__text h2 {
+  font-size: 20px;
+  color: #003D70;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.invoice__content__text h3{
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.invoice__content__text p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.invoice__content__text span {
+  font-size: 16px;
+  color: #003D70;
+  font-weight: 600;
+}
+
+.invoice__content__text strong {
+  font-size: 16px;
+}
+
+.invite-detail p {
+  margin: 0;
+}
+
+.invite-detail span {
+  text-transform: capitalize;
+}
+
+.invoice-details__heading {
+  text-align: center;
+}
+.invoice-details__heading h5 {
+  font-family: unset;
+  margin-bottom: 0;
+}
+
+.invoice-details__heading p {
+  font-size: 16px;
+}
+
+.invoice-details__heading strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+table {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+table span {
+  text-transform: capitalize;
+}
+table td {
+  padding: 10px 0;
+}
+
+table .border-bottom {
+  border-bottom: 1px dashed #000 !important;
+}
+
+.social {
+  margin: 0;
+  background-color: #D0DD2A;
+}
+
+.social span {
+  text-transform: capitalize;
+}
+.social a{
+  color: #010101;
+}
+.social p {
+  margin: 0;
+}
+
+.download-invoice {
+  background-color: #003d70;
+  padding: 1rem;
+}
+
+.download-invoice a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #D0DD2A;
+}
+
+.download-invoice a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .invoice__heading h1{
+    font-size: 20px;
+  }
+
+  .invoice__heading h4{
+    font-size: 14px;
+  }
+
+  .invoice__heading p{
+    font-size: 14px;
+  }
+
+  .invoice__content__text p{
+    font-size: 12px;
+  }
+
+  .invoice__content__text span{
+    font-size: 12px
+  }
+
+  .invoice__content__text h2{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .invoice__content__text p{
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .invoice-details__heading strong{
+    font-size: 14px;
+  }
+
+  .invoice__content__text strong{
+    font-size: 12px;
+  }
+  .invoice__heading{
+    padding: 0rem 1rem 0 0;
+  }
+}

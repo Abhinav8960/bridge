@@ -1,0 +1,83 @@
+/* -------- Faq---------- */
+.faq-bg{
+    background-color: #F5F5F5;
+  }
+  .faq .accordian-btn-bg {
+    background-color: #e2e2e2;
+    padding: 4rem 1em;
+    border-radius: 12px;
+  }
+  .faq-banner{
+    padding:0;
+  }
+  .faq {
+    padding: 2rem 0 2rem 0;
+  }
+  
+  .faq .accordion {
+    margin-bottom: 4rem;
+  }
+  
+  .faq .accordion-item {
+    margin-bottom: 25px;
+    border-radius: 16px;
+    font-weight: 600;
+  border: none;
+  }
+  .faq  .accordion-body{
+    font-size: 16px;
+    font-weight: 500;
+     @include down-sm{
+      font-size: 14px;
+     }
+     @include down-ss{
+      font-size: 12px;
+     }
+  }
+  
+  .faq .accordion-button:focus,
+  .accordion-button:active,
+  .accordion-button.active,
+  .accordion-button:focus:active {
+    box-shadow: none;
+  }
+  
+  .faq .accordion-button:not(.collapsed) {
+  
+    background-color:$white;
+    box-shadow: none;
+  
+  }
+  
+  .faq .accordion-button::after {
+    order: 1;
+    margin-left: auto;
+    margin-right: 0.5em;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+  }
+  
+  .faq .accordion-button:not(.collapsed)::after {
+    order: 1;
+    margin-left: auto;
+    margin-right: 0.5em;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    background-color: white;
+  }
+  
+  .faq  .accordion-button {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 12px !important;
+    color: $blue;
+    font-size: 18px;
+    font-weight: 600;
+    @include down-sm{
+      font-size: 16px;
+    }
+    @include down-ss{
+       font-size: 14px;
+    }
+  }

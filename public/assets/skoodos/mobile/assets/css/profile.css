@@ -1,0 +1,18 @@
+.wishlist-container {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+.wishlist-container .wishlist-content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.wishlist-container .wishlist-content .m-dropdown form-select {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 64px 10px 20px;
+  width: 250px;
+}
+.wishlist-container .wishlist-container .featured-institutes {
+  background-color: transparent;
+}/*# sourceMappingURL=profile.css.map */

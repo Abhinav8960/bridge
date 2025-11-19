@@ -1,0 +1,117 @@
+.section--exams {
+  margin-bottom: 2rem;
+  &__card {
+    background: linear-gradient(
+      0deg,
+      rgba(243, 243, 243, 1) 0%,
+      rgba(255, 255, 255, 1) 80%
+    );
+    border-radius: 12px;
+    padding: 1.5rem 1rem 1rem 1rem;
+
+    @include down-sm {
+      padding: 1rem;
+    }
+    &__header {
+      h2 {
+        font-size: 24px;
+        color: $blue;
+        font-family: "segoe_uiregular";
+        @include down-sm {
+          font-size: $regular;
+        }
+      }
+      p {
+        font-size: 24px;
+        color: $black;
+        padding: 1rem 0;
+        @include down-sm {
+          font-size: $xsmall;
+          padding: 1rem 0;
+        }
+      }
+      img {
+        width: 12%;
+       
+      }
+    }
+  }
+  .card--box {
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $border-grey;
+    margin-bottom: 1.5rem;
+    background-color: $white;
+    @include down-sm {
+      padding: 8px;
+      margin-bottom: 1.5rem;
+    }
+    &:hover {
+      background-color: $yellow;
+      border: none;
+    }
+    &:hover p {
+      color: $blue;
+    }
+    &:hover .img-2{
+      display: block;
+    }
+    &:hover .img-1{
+      display: none;
+    }
+    
+    &__img {
+      .img-2{
+        display: none;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        @include down-ss {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &__text {
+      h2 {
+        font-size: 24px;
+        color: $blue;
+        text-align: right;
+        font-family: "segoe_uiregular";
+        @include down-sm{
+          font-size: 14px;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: $blue;
+        text-align: right;
+        color: $grey;
+        @include down-sm{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .btn-wrapper{
+  a {
+    font-size: $regular;
+    color: $blue;
+    margin-bottom: 8px;
+    display: inline-block;
+    @include down-sm{
+      margin-bottom: 8px;
+      font-size: $xsmall;
+    }
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+  }
+}

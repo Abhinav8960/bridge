@@ -1,0 +1,2796 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  /* -----Color----- */
+
+  scroll-behavior: smooth;
+  --black: #000;
+  --yellow: #d0de29;
+  --white: #fff;
+  --primary: #004b84;
+  --silver: #a0a0a0;
+  --silverbg: #f8f8f8;
+}
+
+/* ------Fonts------ */
+
+@font-face {
+  font-family: Segoe UI;
+  src: url(../font/Segoe_UI.ttf);
+}
+
+@font-face {
+  font-family: Segoe UI Bold;
+  src: url(../font/Segoe_UI_Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../font/Roboto-Light.ttf);
+}
+
+
+body {
+  font-family: 'Segoe UI';
+  color: var(--black);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+hr.divider {
+  height: 0.2rem;
+  margin-top: 4px;
+  margin-left: 3px;
+  max-width: 6rem;
+  background-color: var(--yellow);
+  opacity: 1;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.viewall {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.viewall:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.view-btn {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  color: var(--primary);
+  padding: 12px 34px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.Exams__heading .view-btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.view-btn:hover {
+  color: var(--yellow);
+  background-color: var(--primary);
+}
+
+.yellow-btn {
+  background-color: var(--yellow);
+  color: var(--primary);
+  padding: 6px 58px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid var(--yellow);
+}
+
+.yellow-btn:hover {
+  background-color: var(--primary);
+  color: var(--yellow);
+  padding: 6px 58px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid var(--primary);
+}
+
+.blue-btn {
+  background-color: var(--primary);
+  color: var(--yellow);
+  padding: 6px 58px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid var(--primary);
+}
+
+.blue-btn:hover {
+  background-color: var(--yellow);
+  color: var(--primary);
+  padding: 6px 58px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid var(--yellow);
+}
+
+
+
+/*--------------------------------------------------------------
+# Top Navbar
+--------------------------------------------------------------*/
+.top_navbar {
+  height: 40px;
+  background-color: var(--primary);
+  position: relative;
+  z-index: 1;
+
+}
+
+.top_navbar .top-social-link span {
+  color: var(--white);
+}
+
+.top_navbar .top-social-link i {
+  background-color: var(--yellow);
+  color: var(--primary);
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+.top_navbar .top-social-link i:hover {
+  background-color: var(--white);
+}
+
+.top_navbar .top_contact {
+  gap: 1rem;
+}
+
+.top_navbar .top_contact a {
+  color: var(--white);
+}
+
+.top_navbar .top_contact a:hover {
+  color: var(--yellow);
+}
+
+.top_navbar .top_contact img {
+  margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: var(--primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: var(--yellow);
+  color: var(--primary);
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumb
+--------------------------------------------------------------*/
+.breadcrumb {
+  align-items: center;
+}
+
+.breadcrumb-item.active {
+  color: var(--primary);
+}
+
+#breadcrumbs {
+  margin: 2rem 0;
+}
+
+#breadcrumbs li a {
+  color: var(--silver);
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  /* position: relative; */
+  background-color: transparent;
+}
+
+.header .logo {
+  line-height: 0;
+}
+
+.header .logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: var(--primary);
+  white-space: nowrap;
+  transition: 0.3s;
+  font-family: 'Roboto-Medium';
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar li:hover,
+.navbar .active,
+.navbar .active:focus {
+  color: var(--primary);
+  background-color: var(--yellow);
+  border-radius: 10px;
+}
+
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .login-dd ul {
+  left: -170px;
+  z-index: 999;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-family: 'Roboto-Medium';
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: var(--primary);
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  background: url("../img/hero-banner.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -145px;
+  padding-top: 22rem;
+  padding-bottom: 16rem;
+  z-index: -1;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 50px;
+  color: var(--primary);
+  font-family: 'Segoe UI';
+}
+
+.hero h1 span {
+  font-family: 'Segoe UI Bold';
+}
+
+.hero .search_box {
+  margin-top: 4rem;
+}
+
+.hero .search_box a span:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.hero .search_box img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-right: 6px;
+}
+
+
+.hero .search_box .form-select {
+  width: 14%;
+  padding: 20px 20px;
+  border: none;
+  border-right: 1px solid var(--silver);
+  color: var(--primary);
+  border-radius: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
+  background-image: none;
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+.hero .search_box .input-group {
+  width: 60%;
+  position: relative;
+  align-items: center;
+}
+
+.hero .search_box .form-control {
+  padding: 20px 24px;
+  border-radius: 0;
+  border: none;
+  border-top-right-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+  color: var(--primary);
+  -webkit-box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.hero .search_box .form-control::placeholder {
+  color: var(--primary);
+}
+
+
+.hero .input-group .input-group-text {
+  border-radius: 12px;
+  background-color: var(--yellow);
+  color: var(--primary);
+  position: absolute;
+  right: 2%;
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  z-index: 99;
+}
+
+.hero .input-group .input-group-text:hover {
+  color: var(--yellow);
+  background-color: var(--primary);
+}
+
+.hero .input-group .input-group-text i {
+  margin-right: 10px;
+}
+
+.navbar .login-dd:hover {
+  background: none !important;
+}
+
+/*--------------------------------------------------------------
+# Best Institutes
+--------------------------------------------------------------*/
+.best-institutes {
+  margin: 5rem 0;
+}
+
+.best-institutes p {
+  font-size: 1.1rem;
+}
+
+.best-institutes h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Roboto-Medium';
+  color: var(--primary);
+}
+
+.best-institutes .divider {
+  margin: auto;
+}
+
+.best-institutes .cards .card {
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.best-institutes .cards .card img {
+  width: 100%;
+  height: 130px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.best-institutes .cards .card .card-body {
+  background-color: var(--silverbg);
+  border-radius: 10px;
+}
+
+.best-institutes .cards .card .card-body p {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.best-institutes .cards .card .card-body span {
+  color: var(--silver);
+}
+
+/*--------------------------------------------------------------
+# Slick slider
+--------------------------------------------------------------*/
+.slick-prev {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 24px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.slide-arrow i {
+  color: var(--primary-color);
+}
+
+.slide-arrow:hover {
+  background-color: var(--primary-color);
+}
+
+.slide-arrow:hover>i {
+  color: var(--white-color);
+}
+
+.slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 8px 9px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.exams-card .slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 8px 8px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.exams-card .slide-arrow i {
+  font-size: 24px;
+}
+
+.slick-arrow:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.bi-arrow-left {
+  font-size: 28px;
+}
+
+.bi-arrow-right {
+  font-size: 28px;
+}
+
+
+/*--------------------------------------------------------------
+# Enterance Exams
+--------------------------------------------------------------*/
+
+.exams-card .container {
+  box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 15%);
+  border-radius: 16px;
+  padding: 3rem 2rem 3rem 2rem;
+  border-top: 6px solid var(--primary);
+}
+
+.exams-card .e-exams-top {
+  display: flex;
+}
+
+.heading-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 18px;
+  font-family: 'Roboto-Medium';
+}
+
+.institute-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.institute-text {
+  font-size: 1.1rem;
+}
+
+
+.i-number {
+  background-color: var(--silverbg);
+  border-radius: 50%;
+  color: var(--primary);
+  text-decoration: underline;
+  padding: 18px 12px;
+  font-weight: 600;
+  text-underline-position: under;
+}
+
+.exams-card p {
+  padding-left: 83px;
+  font-size: 1.1rem;
+}
+
+.slider-cards .card {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.slider-cards .card.active {
+  background-color: var(--yellow);
+}
+
+.slider-cards .card.active .exam-img-2 {
+  display: block !important;
+}
+
+.slider-cards .card.active .exam-img-1 {
+  display: none !important;
+}
+
+.slider-cards .card:hover {
+  background-color: var(--yellow);
+}
+
+.slider-cards .card:hover p {
+  color: var(--primary);
+}
+
+.slider-cards .card.active p {
+  color: var(--primary);
+}
+
+.slider-cards p {
+  padding: 0;
+  text-align: right;
+  font-size: 14px;
+  margin-top: 4px;
+  color: var(--silver);
+}
+
+.slider-cards h3,
+h2 {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.slider-cards .card img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.exam-img-2 {
+  display: none !important;
+}
+
+.slider-cards .card:hover .exam-img-2 {
+  display: block !important;
+}
+
+.slider-cards .card:hover .exam-img-1 {
+  display: none !important;
+}
+
+.result-institutes h2 {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.result-institutes p {
+  padding: 0;
+  color: var(--silver);
+}
+
+.result-institutes span {
+
+  text-decoration: underline;
+}
+
+.result-cards {
+  display: inline-block;
+}
+
+.result-cards img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.result-cards li {
+  float: left;
+  list-style: none;
+}
+
+.result-cards .card {
+  margin: 0 10px;
+  width: 231px;
+  height: 118px;
+  padding: 1rem;
+}
+
+.result-cards h4 {
+  font-size: 14px;
+}
+
+.result-cards a {
+  background-color: var(--yellow);
+  color: var(--primary);
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 28px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.result-cards a:hover {
+  color: var(--yellow);
+  background-color: var(--primary);
+}
+
+
+/*--------------------------------------------------------------
+# Featured Institutes
+--------------------------------------------------------------*/
+
+.featured-institutes {
+  background-color: var(--silverbg);
+  padding: 2rem 0;
+}
+
+.featured-institutes h2 {
+  font-size: 28px;
+  font-family: 'Roboto-Medium';
+  color: var(--primary);
+  text-transform: uppercase;
+
+}
+
+.featured-dd .form-select {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/*--------------------------------------------------------------
+# Featured Institutes
+--------------------------------------------------------------*/
+
+.featured-institutes .finstitute-img img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.featured-institutes .finstitute-top {
+  padding-top: 4rem !important;
+}
+
+.institute-name {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: 'Roboto-Medium';
+  text-align: left;
+}
+
+.explore-institute-detail li img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0 8px;
+}
+
+.institute-name:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.featured-institutes .finstitute-detail i {
+  margin-right: 6px;
+  color: #d3d3d3;
+}
+
+.featured-institutes .finstitute-detail li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+}
+
+.featured-institutes .finstitute-line {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.featured-institutes .card-body {
+  padding: 0;
+}
+
+.featured-institutes .card-body .card-text {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.rating li {
+  list-style: none;
+  color: var(--silver);
+  font-size: 14px;
+}
+
+.rating li i {
+  color: var(--yellow);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background-image: url(../img/footer/bg.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.footer_desc {
+  font-size: var(--text-font);
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.footer_desc p {
+  font-size: 1.1rem;
+}
+
+.footer-contact-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 6px;
+}
+
+.footer_social span:hover {
+  color: var(--yellow);
+}
+
+.footer_social img {
+  margin-right: 4px;
+}
+
+.footer_follow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1.8rem 0;
+}
+
+.footer_follow p {
+  color: var(--white);
+}
+
+#footer .footer_follow i {
+  background-color: var(--yellow);
+  color: var(--primary);
+  padding: 5px 7px;
+}
+
+#footer .footer_follow i:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.app-store-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.app-store-links img {
+  height: 3rem;
+}
+
+.terms {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.terms p {
+  color: var(--white);
+}
+
+#footer .terms a :hover {
+  color: var(--yellow);
+}
+
+#footer h5 {
+  color: var(--yellow);
+  margin-top: 16px;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-bottom: 10px;
+}
+
+#footer a {
+  color: var(--white);
+}
+
+#footer a:hover {
+  color: var(--yellow);
+}
+
+#footer li {
+  list-style: none;
+}
+
+#footer .footer_bottom {
+  background-color: var(--yellow);
+  padding: 1rem 0;
+  height: 50px;
+  margin-top: 2rem;
+}
+
+#footer .footer_bottom p {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+# Entrance Exam Categories section
+--------------------------------------------------------------*/
+
+.categories-search {
+  background-image: none;
+  margin-top: 0rem;
+  padding: 2rem 0;
+}
+
+.categories-search {
+  background-color: var(--yellow) !important;
+}
+
+.categories-search .search_box {
+  margin-top: 0rem;
+  justify-content: center;
+}
+
+
+.top-banner {
+  margin-top: 4px;
+}
+
+.top-banner p {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.top-banner h1 {
+  font-size: 49px;
+  color: var(--white);
+}
+
+.top-banner span {
+  color: var(--yellow);
+}
+
+.top-banner hr.divider {
+  height: 0.1rem;
+  margin-top: 4px;
+  margin-left: 0px;
+  max-width: 37rem;
+  background-color: var(--yellow);
+  opacity: 1;
+}
+
+
+
+
+/* -------=================== Explore Listing ===========------------- */
+
+.explore-listing-bg {
+  background-image: url(../img/explore-listing/listing_banner.png);
+  padding: 30px 48px;
+  background-size: cover;
+}
+
+.explore-listing-bg img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+
+.explore-listing-bg p {
+  font-size: 1.1rem;
+  line-height: 23px;
+}
+
+.search_cities {
+  background-color: #f5f5f5;
+  padding: 2rem 0;
+}
+
+.search_cities .input-group {
+  position: relative;
+}
+
+.search_cities .input-group i {
+  position: absolute;
+  left: 6%;
+  z-index: 11;
+  top: 28%;
+  color: #cacaca;
+}
+
+.search_cities .form-control {
+  border: 2px solid #eaeaea;
+  border-radius: 14px !important;
+  padding: 12px 10px 12px 50px;
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+.search_cities .vl {
+  border-left: 1px solid #ced4da;
+  height: 48px;
+}
+
+.search_cities .cities-name {
+  display: flex;
+}
+
+.search_cities .cities-name img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.search_cities .cities-name li {
+  color: var(--black);
+  list-style-type: none;
+}
+
+.search_cities .cities-name .nearme-color {
+  color: var(--primary);
+}
+
+.search_cities .cities-name li a {
+  color: var(--black);
+}
+
+.cities-name li .active,
+.cities-name li a:hover {
+  color: var(--primary) !important;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.coaching-institutes h1 {
+  font-size: 24px;
+  color: var(--primary);
+  font-family: 'Roboto-Medium';
+  margin-bottom: 2rem;
+
+}
+
+.coaching-institutes {
+  margin: 2rem 0 4rem 0;
+}
+
+/* -------------Select Stream Filter--------- */
+.select-stream {
+  border: 1px solid var(--silver);
+}
+
+.filter-title {
+  background-color: #eeeeee;
+  padding: 8px 16px;
+  color: var(--primary);
+  border-top: 3px solid var(--primary) !important;
+  font-size: 21px;
+  text-align: left;
+}
+
+.filter-title-head {
+  font-size: 21px;
+}
+
+.cbxTree {
+  color: var(--black);
+  font-weight: 600;
+  padding: 8px 21px 8px 12px;
+}
+
+.cbxTree>.cbxTree-node {
+  padding-left: 0;
+}
+
+.cbxTree {
+  color: var(--black);
+  font-weight: 600;
+  padding: 8px 21px 8px 12px;
+}
+
+.cbxTree>.cbxTree-node {
+  padding-left: 0;
+}
+
+.cbxTree-txt {
+  margin-left: 4px;
+}
+
+.cbxTree input[type="checkbox"]:checked+span {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--white);
+}
+
+.form-check-input:checked[type=checkbox] {
+  background-image: url(../img/explore-listing/tick.png) !important;
+}
+
+.cbxTree-node {
+  padding-left: 19px;
+}
+
+.cbxTree-swicth {
+  float: right;
+  width: 10px;
+  height: 18px;
+  font-size: 22px;
+  color: var(--primary);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -8px;
+
+}
+
+.cbxTree-swicth:hover {
+  color: var(--primary);
+}
+
+.cbxTree-swicth:before {
+  content: "+";
+}
+
+.cbxTree-swicth.open:before {
+  content: "-";
+}
+
+.cbxTree-swicth~.cbxTree-node {
+  display: none;
+}
+
+.cbxTree-swicth.open~.cbxTree-node {
+  display: block;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+  border: 1px solid var(--silver);
+}
+
+.filter_checkboxs .checkbox {
+  background-color: var(--white);
+  padding: 8px 12px;
+}
+
+.checkbox label {
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+input[type="checkbox"]:checked+label {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* ---------------------- Select Exams --------------- */
+
+.filter_exams {
+  border: 1px solid var(--silver);
+}
+
+.checkbox {
+  padding: 8px 12px;
+}
+
+.filter-title a {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 18px;
+}
+
+.listing-border-box {
+  border: 1px solid var(--silver);
+  border-radius: 8px;
+}
+
+.explore-institute-image img {
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.explore-institute-detail li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.explore-institute-detail span {
+  color: #d3d3d3;
+  margin-right: 8px;
+}
+
+.listing-border-box .rating li {
+  font-size: 16px;
+}
+
+.listing-border-box .rating li i {
+  margin-left: 2px;
+}
+
+.listing-border-box .view-btn {
+  padding: 6px 52px;
+  font-size: 16px;
+}
+
+.recommend {
+  position: absolute;
+  top: -49px;
+  left: -13px;
+}
+
+.institute-featured-box .box-image img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.institute-featured-box .institute-details {
+  margin-left: 14px;
+}
+
+.institute-featured-box .institute-details h3 {
+  font-size: 14px;
+  color: var(--primary);
+  font-family: 'Roboto-Medium';
+}
+
+.institute-featured-box .institute-details p {
+  font-size: 14px;
+  font-family: 'Roboto-Light';
+}
+
+.listing-institute-bg {
+  background-image: url(../img/explore-listing/Clip.png);
+  background-repeat: no-repeat;
+  /* height: 143px; */
+  background-size: cover;
+  border-top: 1px solid silver;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.listing-institute-bg img {
+  width: 40%;
+  margin-bottom: px;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.champ {
+  border: none !important;
+  width: 53% !important;
+  margin-right: 30px !important;
+}
+
+.listing-institute-bg h4 {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.listing-institute-bg p {
+  font-size: 14px;
+}
+
+.heading-champ {
+  width: 24%;
+}
+
+.student-card {
+  width: 19%;
+}
+
+/* --------Scroll Bars--------------- */
+
+.filter_exams .checkbox {
+  height: 166px;
+  overflow: auto;
+}
+
+.filter_exams .instittute-checkbox {
+  height: 70px;
+  overflow: auto;
+}
+
+
+.filter_exams .checkbox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.filter_exams .checkbox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.filter_exams .checkbox::-moz-scrollbar {
+  width: 5px;
+}
+
+.filter_exams .checkbox::-moz-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* ---------------------Login---------------------- */
+
+.login-page {
+  display: flex;
+  box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 15%);
+  margin: 3rem 0;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.login-right-bg img {
+  width: 100%;
+  position: relative;
+}
+
+.login-left-box {
+  width: 60%;
+}
+
+.login-left {
+  width: 100%;
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-right-box {
+  width: 40%;
+  position: relative;
+}
+
+.login-right-box h2 {
+  color: var(--white);
+  font-size: 24px;
+  position: absolute;
+  top: 044%;
+  left: 0%;
+  padding: 0 1rem;
+}
+
+.login-right-box span {
+  color: var(--yellow);
+}
+
+.inner_center {
+  width: 100%;
+}
+
+.login-left-box h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.login-left-box span {
+  color: #9fb108;
+}
+
+.login-left-box p {
+  font-size: 22px;
+  color: var(--black-color);
+}
+
+.login-left h6 {
+  font-size: 18px;
+  color: var(--black);
+}
+
+.login-left-box .form-control {
+  color: var(--black-color);
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 2px solid var(--silver);
+
+}
+
+.login-left-box .form-control::placeholder {
+  color: var(--black);
+}
+
+.login_form {
+  margin-top: 2.7rem;
+}
+
+.login_forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.login-left-box .login_input {
+  margin-top: 2rem;
+}
+
+.login-left-box .yellow-btn {
+  border: none;
+  padding: 10px 64px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.login_forgot a {
+  color: var(--black-color);
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 18px;
+}
+
+.login_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login_buttons span {
+  margin-left: 2rem;
+  color: var(--silver-color);
+}
+
+/* -------------------Login Otp-------------------- */
+
+.login-left .otp_input input {
+  width: 17%;
+  border: none;
+  line-height: 32px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  border: 2px solid var(--silver);
+  margin: 0 2px;
+  border-radius: 10px;
+}
+
+.login-left .otp_input {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.login-left .login-otp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-left .otp_input input:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+.login_forgot span {
+  color: #3988c5;
+  font-size: 18px;
+  margin-left: 1rem;
+}
+
+.login_otp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login_otp h6 {
+  font-size: 18px;
+  color: var(--black-color);
+}
+
+.login_otp a {
+  color: #3988c5;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.login_form .login_input {
+  margin-top: 21px;
+}
+
+/* -----------------Forgot Password--------- */
+
+.login_form .login_forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.forget_password .login_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.forget-pass-contain .login-left {
+  width: 100%;
+  padding: 10rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forget_password .login_register_btn {
+  display: flex;
+  align-items: center;
+}
+
+.forget_password .login_register_btn a {
+  color: #3988c5;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.forget_password .register_btn {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.forget_password .login_register_btn span {
+  margin: 0 0.5rem;
+  color: #3988c5;
+}
+
+/* ---------------Register------------- */
+
+.register_btn {
+  color: #3988c5;
+}
+
+.register .login-left {
+  padding: 1rem 4rem;
+}
+
+.register .login_right {
+  padding: 4.5rem 8rem;
+}
+
+.register .form-check a {
+  color: #3988c5;
+}
+
+.register .login_form {
+  margin-top: 2rem;
+}
+
+.register .form-check-input[type="checkbox"] {
+  padding: 9px;
+  border-color: var(--silver);
+  margin-right: 10px;
+}
+
+.register .form-check-input {
+  border: 2px solid var(--silver);
+}
+
+.register input[type="checkbox"]:checked+label {
+  text-decoration: none;
+}
+
+/* ---------------- Microsite --------------- */
+.m-recommended {
+  width: 136px;
+}
+
+.micro-institute-deatils {
+  margin: 2rem 0 3rem 0;
+}
+
+.micro-institute-deatils .institute-name {
+  margin-bottom: 10px;
+}
+
+.m-institute-text li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.m-institute-text li img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0 8px;
+}
+
+.m-institute-text li i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.m-institute-text {
+  margin-left: 1.5rem;
+}
+
+.m-institute-text li span i {
+  color: #d3d3d3;
+}
+
+.m-institute-text h1 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.m-institute-image img {
+  width: 100%;
+}
+
+.micro-institute-deatils .yellow-btn {
+  padding: 6px 58px;
+  width: 304px;
+  text-align: center;
+}
+
+.micro-institute-deatils .blue-btn {
+  padding: 6px 58px;
+  width: 304px;
+  text-align: center;
+
+}
+
+.wishlist-icon a {
+  border: 1px solid var(--yellow);
+  padding: 2px 32px;
+  border-radius: 6px;
+
+}
+
+.wishlist-icon img {
+  margin-right: 6px;
+
+}
+
+.microsite-bg {
+  background-image: url(../img/microsite/banner.png);
+  height: 258px;
+  background-size: cover;
+}
+
+
+.micro-tabs .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--primary);
+  background-color: var(--yellow);
+
+}
+
+.micro-tabs .nav-link {
+  color: var(--black);
+  border-radius: 18px;
+  font-size: 18px;
+
+}
+
+.micro-tabs .nav-link:hover {
+  color: var(--primary);
+  background-color: var(--yellow);
+  font-size: 18px;
+
+}
+
+.tab-bg {
+  background-color: var(--silverbg);
+  padding: 1rem 0;
+}
+
+/* --------------- Microsite General --------------- */
+
+.micro-heading {
+  font-size: 24px;
+  color: var(--primary);
+  font-family: 'Roboto-Medium';
+  text-align: left;
+}
+
+.admsn-screen-bg {
+  background-image: url(../img/microsite/general/about-institute/Artwork-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.5rem 14rem 2.3rem 2rem;
+}
+
+.mock-text-bg {
+  background-image: url(../img/microsite/general/about-institute/Artwork.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.5rem 14rem 2.3rem 2rem;
+}
+
+.m-about-institute h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.m-about-institute p {
+  font-size: 1.1rem;
+}
+
+.m-about-institute h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.m-about-institute .yellow-btn {
+  margin-top: 2rem;
+  padding: 6px 32px;
+}
+
+.m-about-institute .yellow-btn:hover {
+  padding: 6px 32px;
+}
+
+.m-features .card {
+  padding: 1.8rem 1rem;
+  box-shadow: 2px 2px 5px 1px #aaa;
+  width: 260px;
+}
+
+.micro-features-cards {
+  padding: 2rem 0;
+}
+
+.m-features .card img {
+  margin: auto;
+}
+
+.m-features .card h3 {
+  font-size: 18px;
+  margin-top: 4px;
+  color: var(--primary);
+}
+
+.m-features .card p {
+  font-size: 16px;
+  color: var(--black);
+
+}
+
+.features-card-bg {
+  background-color: #f3f6cb;
+}
+
+.micro-features-cards .card img {
+  width: 280px;
+  /* border: 1px solid var(--silver); */
+  box-shadow: 2px 2px 5px 1px #aaa;
+  border-radius: 4px;
+}
+
+.micro-features-cards .card {
+  box-shadow: none !important;
+  border: none !important;
+  margin: 1rem;
+}
+
+.leadership-box {
+  gap: 3rem;
+}
+
+.m-leadership h2 {
+  font-size: 24px;
+  color: var(--primary);
+  margin-top: 1rem;
+  font-family: 'Roboto-Medium';
+  text-align: left;
+}
+
+.m-leadership h3 {
+  font-size: 24px;
+  color: var(--primary);
+  margin-top: 1rem;
+  font-family: 'Roboto-Medium';
+  text-align: center;
+}
+
+.m-leadership p {
+  font-size: 1.1rem;
+}
+
+/* --------------Slick Light box------------ */
+
+.slick-lightbox .slick-next,
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer !important;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
+
+
+/* ---------------------- Microsite Course ---------------- */
+
+.show-more {
+  display: none;
+}
+
+.engineer-show-more {
+  display: none;
+}
+
+.container-box {
+  box-shadow: 2px 2px 5px 1px #aaa;
+}
+
+.m-exams-btn {
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.m-exams-btn .view-btn {
+  padding: 6px 21px;
+
+}
+
+.m-exams-btn .splash a {
+  color: var(--primary);
+  margin-right: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.m-exams-btn .splash:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.couese-sub-heading {
+  padding: 1rem 3rem;
+  background-color: var(--silverbg);
+  align-items: center;
+}
+
+.couese-sub-heading h3 {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.Exams__heading {
+  padding: 2rem 0 1rem 0
+}
+
+.Exams__heading h4 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.m-course-timing-details {
+  padding: 1rem 3rem 1rem 4rem;
+}
+
+.m-course-timing-details p {
+  font-size: 1.1rem;
+}
+
+.m-stream-icon-bg {
+  background-image: url(../img/microsite/caurses/discount.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 12px 36px 15px 57px;
+}
+
+.m-stream-icon-bg p {
+  color: var(--white);
+}
+
+.m-stream-icon-bg span {
+  color: var(--yellow);
+}
+
+.m-stream-detail {
+  margin-left: 1rem;
+}
+
+.m-stream-detail h4 {
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.m-stream-detail span {
+  color: var(--black);
+}
+
+.m-course-timing-details .fee-discount {
+  width: 154px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.strikeout {
+  line-height: 1em;
+  position: relative;
+}
+
+.strikeout::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 57%;
+}
+
+/* ------------------ Champions --------------- */
+
+.m-dropdown .form-select {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 64px 10px 20px;
+  width: 250px;
+}
+
+.Champions .m-exams-btn {
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.Champions .view-btn.active {
+  background-color: var(--primary);
+  color: var(--yellow);
+}
+
+.m-dropdown .form-select:focus {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 64px 10px 20px;
+  cursor: pointer;
+}
+
+.student-profile h3 {
+  font-size: 18px;
+  color: var(--primary);
+  font-family: 'Roboto-Medium';
+  margin-top: 10px;
+}
+
+.student-profile p {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.Champions .container-box {
+  box-shadow: 2px 2px 5px 1px #aaa;
+  margin-bottom: 6rem;
+}
+
+/* ---------------------------- Faculty ---------------------- */
+.faculty-show-more {
+  display: none;
+}
+
+.m-faculty .container-box {
+  padding: 0rem 3rem 4rem 3rem;
+  margin-bottom: 6rem;
+}
+
+.m-faculty .card-body {
+  padding: 0 1rem;
+
+}
+
+.m-faculty .card-body h3 {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: 'Roboto-Medium';
+}
+
+.m-faculty .card-body h4 {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.m-faculty .card-body p {
+  text-align: justify;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.m-faculty .card img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.m-faculty .card {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+/* --------------- Centers ----------------- */
+
+.m-centers .center_contact_icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.microsite_centers_details h3 {
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.microsite_centers_details img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.microsite_centers_details p {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.centers_social_links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.centers_social_links li {
+  list-style: none;
+}
+
+.centers_social_links li i {
+  background-color: var(--yellow);
+  color: var(--primary);
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+.centers_social_links li i:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+.centers-weblink a {
+  color: var(--black);
+}
+
+.microsite_map iframe {
+  width: 350px;
+  height: 270px;
+}
+
+.m-centers {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.m-centers .container-box {
+  padding: 4rem 3rem 2rem 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+/* ------------------------- Videos ---------------- */
+.videos {
+  margin-bottom: 4rem;
+}
+
+.videos .container-box {
+  box-shadow: none;
+}
+
+.videos .card {
+  max-width: 600px;
+  height: 182px;
+  float: right;
+  margin-top: 2rem;
+  background-color: var(--silverbg);
+}
+
+.videos .card-body h3 {
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.videos .card iframe {
+  width: 200px;
+  height: 180px;
+  padding: 5px 0 5px 5px;
+}
+
+.videos .footer-text {
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 8px;
+  color: var(--silver);
+}
+
+/* ------------------ Review ----------------- */
+.review-left-box {
+  background-color: var(--yellow);
+  padding: 18px;
+  border-radius: 46px;
+  margin-right: 10px;
+}
+
+.review-rate {
+  padding: 1rem 3rem;
+}
+
+.review .review-left-box h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.review .review-left-box i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+.review-rate p {
+  font-size: 21px;
+}
+
+.review-rate .progress-bar {
+  background-color: var(--yellow);
+}
+
+.review-vertical .vl {
+  border-left: 1px solid var(--silver);
+  height: 150px;
+}
+
+
+.review {
+  margin-bottom: 6rem;
+}
+
+.review .form-control {
+  border-radius: 6px;
+  background-color: var(--silverbg);
+  border: none;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.review-top p {
+  font-size: 1.1rem;
+}
+
+.review .form-control::placeholder {
+  color: var(--black);
+}
+
+.m-rating {
+  background-color: var(--silverbg);
+  padding: 10px 16px;
+  margin-bottom: 7px;
+}
+
+.popover-review {
+  cursor: pointer;
+}
+
+.m-rating ul li {
+  font-size: 1rem;
+  color: var(--black);
+  list-style: none;
+}
+
+.m-rating .pull-right {
+  float: right;
+}
+
+.m-rating ul .star-icon {
+  cursor: pointer;
+  color: var(--silver);
+}
+
+.rating-bg-yellow {
+  background-color: var(--yellow);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.review .container-box {
+  padding: 3rem 4rem;
+}
+
+.review .container-box h3 {
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 21px;
+  margin-bottom: 1rem;
+}
+
+.user-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.user-rating li {
+  font-size: 1rem;
+}
+
+.user-name {
+  margin-left: 10px;
+}
+
+.user-name p {
+  font-weight: 600;
+}
+
+.user-name a {
+  color: #2495c2;
+}
+
+.user-name a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-right: 5px;
+}
+
+.review-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.like-dislike {
+  gap: 10px;
+}
+
+.like-dislike span i {
+  color: var(--primary);
+  margin-right: 10px;
+  font-size: 21px;
+}
+
+.change-icon>.bi+.bi,
+.change-icon:hover>.bi {
+  display: none;
+}
+
+.change-icon:hover>.bi+.bi {
+  display: inherit;
+}
+
+/* -----------------------Alumni----------------------- */
+.alumni-show-more {
+  display: none;
+}
+
+.m--alumni .container-box {
+  padding: 0rem 3rem 3rem 3rem;
+  margin-bottom: 6rem;
+}
+
+.m--alumni .container-box .card {
+  margin-top: 5rem;
+  padding: 1rem;
+
+}
+
+.m--alumni .almuni-passing {
+  color: var(--silver);
+  margin: 0 !important;
+}
+
+.m--alumni .card-body h5 {
+  color: #8A8A8A;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* ------------------------- contact ------------------------- */
+
+.m-contact {
+  margin-bottom: 6rem;
+}
+
+.m-contact .form-control {
+  color: #3988c5;
+  background-color: var(--silverbg);
+  border: none;
+  padding: 1.175rem 0.75rem;
+}
+
+.m-contact .form-control::placeholder {
+  color: #3988c5;
+}
+
+.m-contact .form-grup .form-select {
+  padding: 1.175rem 0.75rem;
+  background-color: var(--silverbg);
+  border: none;
+  color: #3988c5;
+}
+
+.refresh span {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.refresh span a {
+  color: var(--black);
+}
+
+.contact---yellow-btn {
+  padding: 10px 60px;
+}
+
+.contact---yellow-btn:hover {
+  padding: 10px 60px;
+}
+
+
+.m-contact .container-box {
+  padding: 4rem 3rem 2rem 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.m-contact .center_contact_icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.popover {
+  width: 450px;
+  max-width: 300px;
+}
+
+/* --------- 404 Error */
+
+.error {
+  padding: 6rem 0;
+}
+
+.error img {
+  width: 50%;
+}
+
+.error h1 {
+  padding: 2rem 0 0 0;
+  font-size: 36px;
+  color: var(--black);
+}
+
+.error p {
+  font-size: 24px;
+  color: var(--black);
+}
+
+/* ------- Select 2------- */
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: var(--primary);
+  line-height: 42px;
+  padding-left: 20px;
+}
+
+.select2-container .select2-selection--single {
+  height: 42px;
+  border: 1px solid var(--primary);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  top: 80%;
+}
+
+/* ------- Modal Splash --------- */
+
+.modal-splash h5 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modal-splash .modal-header {
+  background-color: #F5F5F5;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 12px !important;
+}
+
+.modal-splash h5 img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.modal-splash .search {
+  position: relative;
+  box-shadow: none;
+}
+
+.modal-splash .bi-geo-alt {
+  color: var(--silver-color);
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-splash .form-control {
+  border-radius: 0;
+  color: var(--silver-color);
+}
+
+.modal-splash .search input {
+  height: 40px;
+  text-indent: 24px;
+  font-size: 12px;
+}
+
+.modal-splash-text {
+  padding-left: 2rem;
+}
+
+.modal-splash p a {
+  color: var(--primary);
+  font-size: 18px;
+  display: block;
+}
+
+.modal-splash p a:hover {
+  font-weight: 600;
+}
+
+.modal-splash .modal-body {
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.modal-splash .modal-content {
+  border-radius: 12px !important;
+}
+
+.my-profile {
+  margin: 1rem 0;
+}
+
+.my-profile h2 {
+  font-size: 24px;
+  font-family: 'Roboto-Medium';
+  text-transform: capitalize;
+}
+
+.wish-list .nav {
+  padding: 2rem 0;
+  gap: 4rem;
+}
+
+.wish-list__tab {
+  background-color: #F8F8F8;
+}
+
+.wish-list__tab .nav-item .nav-link {
+  color: var(--black);
+  padding: 0;
+  font-size: 21px;
+}
+
+.wish-list__tab .nav-item .nav-link span {
+  font-weight: 600;
+}
+
+.wish-list__tab .nav-item .nav-link.active {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.wish-list__tab .nav-item .nav-link.active {
+  background-color: transparent;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.wishlist-container {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+
+}
+
+.wishlist-content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.wishlist-container  .card .bi-x-lg{
+  display:block ;
+  padding: 10px 1.5rem 0px 1.5rem;
+  float: right;
+}
+
+.empty a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.empty a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.empty a img {
+  margin-right: 1rem;
+}
+
+.wishlist-container .featured-institutes {
+  background-color: transparent;
+}
+
+.wishlist-container .featured-institutes .finstitute-top {
+  padding-top: 1.5rem !important;
+}
+
+.wishlist-container .featured-institutes .stream span {
+  color: #858585;
+}
+
+.wishlist-container .featured-institutes .stream p {
+  color: var(--primary);
+  font-size: 16px;
+}
+
+/* ------ Enroll----- */
+.profile-enroll-item-bg{
+  background-image: url(../img/enroll-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 70px;
+}
+.profile-enroll-item-bg .yellow-btn{
+  padding: 6px 32px;
+}
+
+.profile-enroll h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.profile-enroll h3::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 16px;
+  margin-left: -32px;
+  background-color: var(--primary);
+}
+.profile-enroll-item {
+  margin: 2rem 0;
+}
+.profile-enroll{
+  margin: 3rem 0 8rem 0;
+}
+.profile-enroll h5 {
+  font-size: 18px;
+  color: var(--black);
+  margin-top: 14px;
+}
+.profile-enroll h5 span{
+  font-weight: 600;
+}
+.dashed-line{
+  opacity: 1;
+  margin: 4rem auto;
+  width: 100%;
+  border-top: 2px dotted var(--silver);
+  background-color: transparent;
+}
+
+.change-password .border-right {
+  padding: 2rem 0 6rem 0;
+  height: 100%;
+}
+
+.change-password h3 {
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 1.5rem;
+}
+
+.change-password h4 {
+  font-size: 21px;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.change-password ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.change-password ul li i {
+  margin-right: 1rem;
+  color: #d3d3d3;
+}
+
+.border-right {
+  border-right: 1px solid #ced4da;
+}
+
+.change-password form {
+  padding: 3rem 0 3rem 5rem;
+}
+
+.change-password form .form-control {
+  padding: 1rem 1rem;
+  font-size: 18px;
+  border-radius: 12px;
+  color: var(--black);
+}
+
+.modal-enroll .modal-body {
+  text-align: center;
+}
+
+.modal-enroll .m-stream-icon-bg {
+  background-position: center;
+  margin: 1rem 0;
+}
+
+.modal-enroll .m-stream-icon-bg p {
+  color: var(--white) !important;
+}
+
+.modal-enroll .modal-body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.modal-enroll .modal-body h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.modal-enroll .modal-header{
+  justify-content: space-between;
+  display: block;
+}
+.modal-enroll .modal-header .btn-close{
+  margin: 0;
+  display: block;
+  float: right;
+}
+
+.modal-enroll .modal-body h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.modal-enroll .modal-body p {
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.modal-enroll .modal-body p span {
+  font-weight: 600;
+}
+.modal-enroll .yellow-btn{
+padding: 6px 16px;
+}

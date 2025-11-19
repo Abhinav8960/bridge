@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use App\Helpers\Helper;
+use App\Models\User;
+use App\Providers\RouteServiceProvider;
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Modules\Backend\Providers\BackendServiceProvider;
+use Modules\Institute\Providers\InstituteServiceProvider;
+
+class RedirectIfAuthenticated
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @param  string|null  ...$guards
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     */
+    public function handle(Request $request, Closure $next, ...$guards)
+    {
+        $guards = empty($guards) ? [null] : $guards;
+        foreach ($guards as $guard) {
+            if (Auth::guard($guard)->check()) {
+                if (Auth::guard('students')->check()) {
+                    return redirect(RouteServiceProvider::HOME);
+                } else {
+                    if (in_array(Auth::User()->role_id, array_keys(Helper::InternalRoles()))) {
+                        return redirect(BackendServiceProvider::HOME);
+                    } elseif (Auth::User()->role_id == User::ROLE_VENDOR) {
+                        return redirect(InstituteServiceProvider::HOME);
+                    }
+                }
+
+                return redirect(RouteServiceProvider::HOME);
+            }
+        }
+
+        return $next($request);
+    }
+}

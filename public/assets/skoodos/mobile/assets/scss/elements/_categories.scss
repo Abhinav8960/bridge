@@ -1,0 +1,158 @@
+.hero-banner {
+  img {
+    width: 100%;
+  }
+}
+.categories-exams {
+  .section--exams__card {
+    box-shadow: 0px 11px 15px 9px rgb(194 194 194);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    .entrance-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      @include down-sm {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .institute-logo {
+      gap: 10px !important;
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        @include down-sm {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      p {
+        font-size: 24px;
+        color: $blue;
+        text-decoration: underline;
+        text-underline-position: under;
+        background-color: #f8f8f8;
+        border-radius: 50%;
+        padding: 20px 10px;
+        @include down-sm {
+          font-size: 18px;
+        }
+        @include down-ss {
+          font-size: 14px;
+          padding: 15px 10px;
+        }
+      }
+    }
+    .section--exams__card__header {
+      margin-bottom: 2rem;
+      h2 {
+        position: relative;
+        text-transform: uppercase;
+        text-align: left;
+        @include down-sm {
+          font-size: 16px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 140px;
+          height: 2px;
+          background-color: $yellow;
+          bottom: 0;
+          margin-bottom: -8px;
+          @include down-ss {
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.featured-institute {
+  padding: 3rem 0;
+  @include down-ss {
+    padding: 2rem 0;
+  }
+  &__container {
+    border: 1px solid $border-grey;
+    margin-top: 3rem;
+    padding:0 1rem 1rem 1rem;
+    position: relative;
+    height: 100%;
+    border-radius: 12px;
+    @include down-sm {
+      margin-top: 2rem;
+    }
+    .recommended {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 31%;
+      margin-bottom: 6px;
+    }
+    .rating {
+      display: flex;
+      justify-content: end;
+      gap: 2px;
+      li {
+        i {
+          color: $yellow;
+          font-size: 16px;
+          @include down-ss{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .featured-institute__card {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+    
+      @include down-ss {
+        gap: 16px;
+        margin-top: 10px;
+      }
+      .featured-institute__img {
+        width: 30%;
+        img {
+          width: 100%;
+          border: 1px solid #d3d3d3;
+        }
+      }
+      .featured-institute__text {
+        width: 70%;
+        h3 {
+          font-size: 24px;
+          color: $blue;
+          margin-bottom: 1rem;
+          @include down-sm {
+            font-size: 16px;
+            margin-bottom: 8px;
+          }
+          @include down-ss {
+            font-size: 14px;
+          }
+        }
+        li {
+          font-size: 18px;
+          margin-bottom: 6px;
+          @include down-sm {
+            font-size: 14px;
+          }
+          @include down-ss{
+            font-size: 12px;
+          }
+          i {
+            margin-right: 10px;
+            color: #d3d3d3;
+          }
+        }
+      }
+    }
+  }
+  
+}

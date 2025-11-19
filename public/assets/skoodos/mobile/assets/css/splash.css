@@ -1,0 +1,8 @@
+.splash {
+  background-image: url(../img/Splash.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}/*# sourceMappingURL=splash.css.map */

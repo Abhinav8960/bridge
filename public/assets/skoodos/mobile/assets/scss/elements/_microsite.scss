@@ -1,0 +1,1682 @@
+.microsite-banner {
+  img {
+    width: 100%;
+  }
+}
+
+// ===== Broucher
+
+.broucher-section {
+  margin: 2rem 0;
+  .broucher-card {
+    box-shadow: 0px 4px 11px 5px rgba(187, 206, 227, 1);
+    background: linear-gradient(
+      0deg,
+      rgba(240, 240, 240, 1) 0%,
+      rgba(255, 255, 255, 1) 87%
+    );
+    border-radius: 12px;
+    position: relative;
+    padding: 5rem 2rem 1rem 2rem;
+    @include down-sm {
+      padding: 2.5rem 1rem 1rem 1rem;
+    }
+    .recomended {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      @include down-ss {
+        width: 30%;
+      }
+    }
+    .institute-details {
+      display: flex;
+      gap: 2rem;
+      @include down-sm {
+        gap: 1rem;
+      }
+      .institute-img {
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+      .institute-text {
+        width: 70%;
+        img {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-right: 1rem;
+          margin-top: 10px;
+          width: 10%;
+        }
+        h2 {
+          font-size: 24px;
+          color: $blue;
+          @include down-sm {
+            font-size: 18px;
+          }
+          @include down-ss {
+            font-size: 16px;
+          }
+        }
+        .rating {
+          display: flex;
+          gap: 6px;
+          li {
+            font-size: 24px;
+            color: $yellow;
+            @include down-sm {
+              font-size: 18px;
+            }
+            @include down-ss {
+              font-size: 16px;
+            }
+          }
+        }
+        .broucher-card-text {
+          margin-top: 1rem;
+          @include down-ss {
+            margin-top: 10px;
+          }
+          li {
+            font-size: 24px;
+            @include down-sm {
+              font-size: 18px;
+            }
+            @include down-ss {
+              font-size: 14px;
+            }
+          }
+
+          i {
+            color: #d3d3d3;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .broucher-btn {
+      margin: 2rem 0;
+      a {
+        background-color: $blue;
+        display: block;
+        color: $white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 24px;
+        border-radius: 12px;
+        @include down-sm {
+          font-size: 18px;
+        }
+        @include down-ss {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+// =========== About
+
+.about-institute-section {
+  margin-bottom: 3rem;
+  .about-institute {
+    padding: 2rem;
+    box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+    background: $white;
+    border-radius: 12px;
+    @include down-ss {
+      padding: 1rem;
+    }
+    .section--heading {
+      h2 {
+        text-transform: capitalize;
+      }
+      margin-bottom: 2.5rem;
+    }
+    p {
+      font-size: 16px;
+      color: $black;
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    .about-institute-img-text {
+      position: relative;
+      margin-top: 2rem;
+      img {
+        width: 100%;
+      }
+      .about-institute-text {
+        position: absolute;
+        width: 50%;
+        margin-left: auto;
+        top: 0;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        @include down-ss {
+          width: 60%;
+        }
+        h3 {
+          font-size: 24px;
+          color: $blue;
+          @include down-sm {
+            font-size: 18px;
+          }
+          @include down-ss {
+            font-size: 12px;
+          }
+        }
+        h4 {
+          font-size: 36px;
+          color: $blue;
+          @include down-sm {
+            font-size: 24px;
+          }
+          @include down-ss {
+            font-size: 14px;
+            margin: 0px 0 5px 0;
+          }
+        }
+        p {
+          font-size: 16px;
+          margin: 10px 0;
+          @include down-sm {
+            font-size: 12px;
+          }
+          @include down-ss {
+            margin: 0;
+            font-size: 9px;
+          }
+        }
+        a {
+          margin-top: 10px;
+          @include down-sm {
+            font-size: 12px;
+          }
+          @include down-ss {
+            font-size: 10px;
+            margin-top: 4px;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ========== features
+
+.microsite-features {
+  padding: 2rem;
+  box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+  background: $white;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  @include down-sm {
+    padding: 1rem;
+  }
+  &__item {
+    text-align: center;
+    margin-top: 2rem;
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      @include down-sm {
+        width: 42px;
+        height: 42px;
+      }
+    }
+    h3 {
+      font-size: 16px;
+      color: $blue;
+      @include down-sm {
+        font-size: 12px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    p {
+      font-size: 16px;
+      @include down-sm {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// ---------- Gallery
+
+.gallery-section {
+  .gallery {
+    padding: 2rem;
+    box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+    background: $white;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    @include down-sm {
+      padding: 1rem;
+    }
+    &__item {
+      margin-top: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+    .gallery-show-more{
+      display: none;
+    }
+  }
+}
+
+// ---------- Leadership
+
+.ledership-card-section {
+  .leadership__content {
+    padding: 2rem;
+    box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+    background: $white;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    @include down-sm {
+      padding: 1rem;
+    }
+    .leadership__card {
+      border: 1px solid #707070;
+      &__img {
+        img {
+          width: 100%;
+        }
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        h3 {
+          font-size: 18px;
+          color: $blue;
+          text-transform: uppercase;
+          @include down-ss {
+            font-size: 14px;
+          }
+        }
+        h4 {
+          font-size: 18px;
+          color: $black;
+          @include down-ss {
+            font-size: 12px;
+          }
+        }
+      }
+      &__details {
+        margin-top: 2rem;
+        p {
+          font-size: 18px;
+          color: $black;
+          @include down-sm {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------===== Microsite Model Option
+
+.microsite-option {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    .modal-content {
+      height: 100vh;
+      border: 0;
+      border-radius: 0;
+      .modal-header {
+        border-bottom: 0;
+        a {
+          color: $blue;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 30px;
+          @include down-sm {
+            font-size: 24px;
+          }
+          @include down-ss {
+            font-size: 18px;
+          }
+          i {
+            font-size: 42px;
+            @include down-sm {
+              font-size: 30px;
+            }
+            @include down-ss {
+              font-size: 30px;
+            }
+          }
+        }
+        .btn-close {
+          font-size: 24px;
+          color: $grey;
+          @include down-sm {
+            font-size: 18px;
+          }
+        }
+      }
+      .modal-body {
+        padding: 0;
+        background-color: $white;
+        .nav {
+          flex-direction: column;
+          .nav-link {
+            color: $blue;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 500;
+            border-radius: 0;
+            padding: 2rem;
+            padding-left: 4.5rem;
+            @include down-sm {
+              padding: 1.5rem 2rem;
+              font-size: 18px;
+              padding-left: 3.5rem;
+            }
+            @include down-ss {
+              padding-left: 3rem;
+            }
+            &.active {
+              background-color: $yellow;
+            }
+            &.active i {
+              color: $white;
+            }
+            img {
+              width: 42px;
+              height: 42px;
+              margin-right: 1rem;
+              @include down-sm {
+                width: 32px;
+                height: 32px;
+              }
+              @include down-ss {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            i {
+              color: $grey;
+              font-size: 32px;
+              &.active {
+                color: $grey;
+              }
+              @include down-sm {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----------- champions
+
+.microstite-container {
+  box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+  background: $white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem 0 2rem 0;
+  @include down-sm {
+    padding: 1.5rem 1rem;
+  }
+  .select2-container {
+    // width: 200px !important;
+    z-index: 0;
+}
+}
+
+.champions-section {
+  .m-exams-btn {
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  .students-card {
+    text-align: center;
+    padding-top: 3rem;
+    &__content {
+      margin-bottom: 3rem;
+      img {
+        width: 80%;
+        margin: auto;
+        @include down-ss {
+          width: 100%;
+        }
+      }
+      h3 {
+        font-size: 18px;
+        color: $blue;
+        padding: 10px 0 6px 0;
+        @include down-sm {
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 12px;
+        }
+      }
+      p {
+        font-size: 16px;
+        color: $black;
+        @include down-sm {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// --------- Faculty
+
+.faculty-section {
+  .faculty-card {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    @include down-ss {
+      margin-top: 2rem;
+    }
+    &__img {
+      width: 35%;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      width: 65%;
+      h3 {
+        font-size: 24px;
+        color: $blue;
+        font-weight: 500;
+        @include down-sm {
+          font-size: 16px;
+        }
+        @include down-ss {
+          font-size: 12px;
+        }
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 6px 0;
+
+        @include down-sm {
+          font-size: 14px;
+          padding: 3px 0;
+        }
+        @include down-ss {
+          font-size: 10px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #8a8a8a;
+        @include down-sm {
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 10px;
+        }
+      }
+      p {
+        font-size: 18px;
+        padding-top: 10px;
+        @include down-sm {
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 10px;
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+// ---------------Centers
+
+.centers-dropdown{
+  .select2-container{
+    z-index: 0 !important;
+  }
+}
+.centers-section {
+  .microstite-container {
+    margin: 2rem 0 2rem 0;
+    h2 {
+      text-transform: capitalize;
+    }
+
+    .center-content {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      align-items: baseline;
+      @include down-ss {
+        gap: 10px;
+      }
+      &__icon {
+        img {
+          width: 26px;
+          height: 26px;
+          object-fit: contain;
+          @include down-sm {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      &__text {
+        h3 {
+          font-size: 21px;
+          color: $blue;
+          margin-bottom: 8px;
+          @include down-sm {
+            font-size: 16px;
+          }
+          @include down-ss {
+            font-size: 14px;
+          }
+        }
+        p {
+          font-size: 18px;
+          @include down-sm {
+            font-size: 16px;
+          }
+          @include down-sm {
+            font-size: 12px;
+          }
+        }
+        a {
+          font-size: 18px;
+          @include down-sm {
+            font-size: 16px;
+          }
+          @include down-sm {
+            font-size: 12px;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            @include down-sm{
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      &__social-icon {
+        display: flex;
+        gap: 10px;
+        @include down-ss {
+          gap: 4px;
+        }
+        i {
+          background-color: #d0dd28;
+          color: #004d85;
+          padding: 6px 8px;
+          font-size: 14px;
+          @include down-sm {
+            font-size: 10px;
+          }
+          @include down-ss {
+            font-size: 8px;
+            padding: 6px 6px;
+          }
+        }
+      }
+      iframe {
+        width: 100%;
+        height: 250px;
+        border: 5px solid $white !important;
+        box-shadow: 0px 4px 3px 3px rgb(187 206 227);
+      }
+    }
+  }
+}
+
+// ------------- Videos --------------
+
+.videos {
+  &__card {
+    margin-top: 2rem;
+    iframe {
+      width: 100%;
+      height: 200px;
+      @include down-sm {
+        height: 170px;
+      }
+      @include down-ss {
+        height: 100px;
+      }
+    }
+    &__text {
+      position: relative;
+      height: 200px;
+      @include down-sm {
+        height: 170px;
+      }
+      @include down-ss {
+        height: 100px;
+      }
+      h3 {
+        font-size: 24px;
+        color: $blue;
+        @include down-sm {
+          font-size: 18px;
+        }
+        @include down-ss {
+          font-size: 12px;
+        }
+      }
+      h4 {
+        font-size: 18px;
+        padding: 8px 0;
+        @include down-sm {
+          font-size: 16px;
+          padding: 8px 0;
+        }
+        @include down-ss {
+          font-size: 10px;
+        }
+      }
+      p {
+        font-size: 18px;
+        @include down-sm {
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 8px;
+        }
+      }
+      span {
+        color: #b5b5b5;
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 0;
+        @include down-sm {
+          font-size: 14px;
+        }
+        @include down-ss {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
+
+// --------------- Reviews --------------
+
+.reviews {
+  .sub-heading {
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+    }
+    .btn-yellow {
+      @include down-ss {
+        width: 140px;
+        height: 32px;
+        font-size: 14px;
+      }
+    }
+  }
+  .people-review {
+    margin-top: 2rem;
+    &__rating {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      a {
+        background-color: $yellow;
+        color: $blue;
+        padding: 6px 10px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        @include down-ss {
+          font-size: 14px;
+        }
+        i {
+          margin-left: 10px;
+        }
+      }
+      p {
+        font-size: 18px;
+        @include down-ss {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .reviews-progress-bar {
+    margin: 2rem 0;
+    .progress-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .progress {
+        width: 75%;
+        height: 24px;
+        border-radius: 24px;
+        @include down-ss {
+          height: 1rem;
+        }
+        .progress-bar {
+          background-color: $yellow;
+        }
+      }
+      span {
+        font-size: 18px;
+        @include down-ss {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .student-review {
+    .star {
+      i {
+        color: $yellow;
+        font-size: 18px;
+        @include down-ss {
+          font-size: 14px;
+        }
+      }
+      span {
+        margin-left: 10px;
+        font-size: 18px;
+        @include down-ss {
+          font-size: 14px;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+      @include down-ss {
+        font-size: 14px;
+      }
+    }
+    &__text {
+      padding: 1rem 0;
+      @include down-ss {
+        padding: 10px 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        @include down-ss {
+          font-size: 16px;
+        }
+      }
+      h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        @include down-ss {
+          font-size: 14px;
+        }
+        span {
+          color: #1c91c2;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: $black;
+        @include down-ss {
+          font-size: 14px;
+        }
+      }
+    }
+    .student-details {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      &__left-box {
+        display: flex;
+        gap: 10px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        h5 {
+          font-size: 18px;
+          color: $black;
+          @include down-ss {
+            font-size: 14px;
+          }
+        }
+        a {
+          color: $blue;
+          font-size: 16px;
+          @include down-ss {
+            font-size: 14px;
+          }
+          span {
+            text-decoration: underline;
+            text-underline-position: under;
+          }
+        }
+      }
+      &__right-box {
+        display: flex;
+        gap: 10px;
+        a {
+          font-size: 18px;
+          @include down-ss {
+            font-size: 14px;
+          }
+
+          span {
+            i {
+              color: $blue;
+              margin-right: 10px;
+              font-size: 18px;
+              @include down-ss {
+                font-size: 14px;
+              }
+            }
+          }
+          .change-icon > .bi + .bi,
+          .change-icon:hover > .bi {
+            display: none;
+          }
+
+          .change-icon:hover > .bi + .bi {
+            display: inherit;
+          }
+        }
+      }
+    }
+    .overall-reviews {
+      ul {
+        li {
+          font-size: 18px;
+          color: $black;
+          @include down-ss {
+            font-size: 14px;
+          }
+        }
+      }
+      &__star {
+        i {
+          color: $yellow;
+        }
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// ------------ review-modal-------
+.review-modal {
+  .form-control {
+    border-radius: 0;
+    color: $black;
+    background-color: #f5f5f5;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    @include down-sm {
+      font-size: 14px;
+    }
+  }
+  .review-modal-divider {
+    border-bottom: 6px solid rgb(165, 165, 165);
+    margin: 2rem 0;
+  }
+  .m-rating {
+    font-size: 12px;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    margin-bottom: 6px;
+    .pull-right {
+      float: right;
+    }
+    ul {
+      li {
+        font-size: 18px;
+        @include down-sm {
+          font-size: 14px;
+        }
+      }
+
+      .star-icon {
+        cursor: pointer;
+        color: rgb(165, 165, 165);
+      }
+    }
+  }
+  .btn-yellow {
+    display: inline-block;
+    padding: 6px;
+    font-size: 18px;
+    @include down-ss {
+      font-size: 14px;
+    }
+  }
+}
+
+// ------------ Contact ----------
+
+.contact-section {
+  padding: 2rem 0;
+  form {
+    margin-top: 2rem;
+    .form-control {
+      background-color: #f6f6f6;
+      border: none;
+      font-size: 18px;
+      border-radius: 0;
+      padding: 1rem;
+      &:focus {
+        box-shadow: none;
+      }
+      &::placeholder {
+        color: $black;
+      }
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    .form-select {
+      background-color: #f6f6f6;
+      border: none;
+      font-size: 18px;
+      border-radius: 0;
+      padding: 1rem;
+      &:focus {
+        box-shadow: none;
+      }
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    .btn-yellow {
+      font-size: 18px;
+      padding: 10px;
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 14px;
+        width: 100px;
+        padding: 6px;
+      }
+    }
+  }
+}
+
+.contact-center-section {
+  .center-content__text {
+    p {
+      font-size: 18px !important;
+      @include down-sm {
+        font-size: 14px !important;
+      }
+      @include down-ss {
+        font-size: 10px !important;
+      }
+    }
+  }
+}
+
+// --------------- Courses
+
+.courses-card {
+  .m-stream-icon-bg {
+    background-image: url(../img/enroll-discount.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px 36px 15px 57px;
+    background-position: center;
+    @include down-sm{
+      padding: 11px 25px 11px 50px;
+    }
+    @include down-ss{
+      padding: 9px 20px 9px 37px;
+    }
+    p{
+      font-size: 18px;
+      color: $white;
+      @include down-sm{
+        font-size: 14px;
+      }
+      @include down-ss{
+        font-size: 10px;
+      }
+      span{
+        color: $yellow;
+      }
+       
+    }
+}
+
+  
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    h2 {
+      font-size: 24px;
+      color: $blue;
+      text-transform: uppercase;
+      display: flex;
+      @include down-sm {
+        font-size: 18px;
+      }
+      @include down-ss {
+        font-size: 16px;
+      }
+      @include down-ss {
+        font-size: 14px;
+      }
+    }
+    img {
+      width: 30%;
+    }
+  }
+  p {
+    font-size: 18px;
+    @include down-sm {
+      font-size: 16px;
+    }
+    @include down-ss {
+      font-size: 14px;
+    }
+    @include down-ss {
+      font-size: 12px;
+    }
+  }
+  &__icons-text {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: inline-block;
+
+    .m-stream-icon-bg{
+      span{
+        &::after{
+          border: none;
+        }
+      }
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+      @include down-sm {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      color: $blue;
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @include down-sm {
+        font-size: 14px;
+      }
+      @include down-ss {
+        font-size: 12px;
+      }
+    }
+    span {
+      line-height: 1em;
+      position: relative;
+      @include down-sm {
+        font-size: 14px;
+      }
+      &::after {
+        border-bottom: 0.125em solid red;
+        content: "";
+        left: 0;
+        margin-top: calc(0.125em / 2 * -1);
+        position: absolute;
+        right: 0;
+        top: 57%;
+      }
+    }
+  }
+
+  .institutes-slider {
+    h5 {
+      font-size: 18px;
+      color: $blue;
+      font-weight: 600;
+      @include down-sm {
+        font-size: 16px;
+      }
+      @include down-ss {
+        font-size: 14px;
+      }
+    }
+    .exam-card-item {
+      margin: 0 10px;
+      padding: 1rem;
+
+      img {
+        width: 80px;
+        object-fit: contain;
+        margin: auto;
+        @include down-sm {
+          width: 60px;
+        }
+      }
+      h6 {
+        font-size: 12px;
+        @include down-sm {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .slide-arrow {
+    position: absolute;
+    top: 34%;
+  }
+  .next-arrow {
+    right: 0;
+  }
+  .prev-arrow {
+    left: 0;
+    z-index: 1;
+  }
+  .swiper-btn {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    border-top: 1px solid $grey;
+    margin: 2rem 0;
+    @include down-ss {
+      gap: 1rem;
+    }
+    .btn-yellow {
+      padding: 1rem;
+      width: 200px;
+      @include down-sm {
+        font-size: 14px;
+        padding: 10px;
+        width: 160px;
+      }
+      @include down-ss {
+        font-size: 12px;
+        width: 130px;
+      }
+    }
+    .btn-blue {
+      padding: 1rem;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include down-sm {
+        font-size: 14px;
+        padding: 10px;
+        width: 160px;
+      }
+      @include down-ss {
+        font-size: 12px;
+        width: 130px;
+      }
+    }
+  }
+  .items{
+    overflow: hidden;
+    margin-bottom: 2rem;
+      .item{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+   }
+}
+
+// --------- Model -------
+
+.modal-splash {
+  .modal-content {
+    border-radius: 12px !important;
+    .modal-header {
+      background-color: #f5f5f5;
+      border: 0;
+      padding: 1rem 2rem;
+      border-radius: 12px !important;
+    }
+  }
+  img {
+    width: 50px;
+    margin-right: 1rem;
+    @include down-ss{
+      width: 40px;
+    }
+  }
+  h5 {
+    color: $blue;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    @include down-sm{
+      font-size: 18px;
+    }
+  }
+  p{
+    font-size: 18px;
+    @include down-sm{
+      font-size: 16px;
+    }
+    span{
+      font-weight: 600;
+    }
+  }
+  .modal-body {
+    padding: 1rem 2rem 3rem 2rem;
+    .search {
+      position: relative;
+      box-shadow: none;
+    }
+    .bi-geo-alt {
+      color: $grey;
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    input {
+      height: 40px;
+      text-indent: 24px;
+      font-size: 12px;
+    }
+    .modal-splash-text {
+      a {
+        color: $blue;
+        font-size: 18px;
+        display: block;
+        @include down-sm{
+          font-size: 16px
+        }
+      }
+    }
+  }
+}
+
+.modal-enroll {
+  h5{
+    display: flex;
+    font-size: 20px;
+    @include down-sm{
+      font-size: 20px;
+    }
+    @include down-ss{
+      font-size: 18px;
+    }
+  }
+  .modal-body {
+    text-align: center;
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 1rem;
+      @include down-sm{
+        font-size: 14px;
+      }
+      @include down-ss{
+        font-size: 12px;
+      }
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: $blue;
+      margin-bottom: 1rem;
+      @include down-sm{
+        font-size: 16px;
+      }
+      @include down-ss{
+        font-size: 14px;
+      }
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: 600;
+      color: $blue;
+      @include down-sm{
+        font-size: 14px;
+      }
+      @include down-ss{
+        font-size: 12px;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: $blue;
+      @include down-sm{
+        font-size: 14px;
+      }
+      @include down-ss{
+        font-size: 12px;
+      }
+    }
+    .btn-yellow{
+      width: auto;
+      padding: 6px 22px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+  }
+  .m-stream-icon-bg{
+    background-image: url(../img/enroll-discount.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px 36px 15px 57px;
+    background-position: center;
+    margin: 1rem 0;
+    p{
+      color: #fff;
+      span{
+        color: $yellow;
+      }
+    }
+  }
+  .strikeout {
+    line-height: 1em;
+    position: relative;
+    &::after{
+      border-bottom: 0.125em solid red;
+      content: "";
+      left: 0;
+      margin-top: calc(0.125em / 2 * -1);
+      position: absolute;
+      right: 0;
+      top: 57%;
+    }
+}
+}
+
+.filter-dropdown {
+  padding: 1rem 0;
+  text-align: end;
+  a {
+    i {
+      font-size: 32px;
+      color: $blue;
+      @include down-sm{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.drop-down-filter {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0 auto;
+    .modal-content {
+      height: 100vh;
+      border: 0;
+      border-radius: 0;
+      .modal-header {
+        border-bottom: 0;
+        .modal-title {
+          color: $blue;
+        }
+      }
+      .modal-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .m-dropdown{
+          margin-bottom: 2rem;
+        .form-select {
+          border: 1px solid $blue;
+          color: $blue;
+          padding: 10px 64px 10px 20px;
+          width: 250px;
+        }
+        .select2-selection--single {
+          height: 42px;
+          border: 1px solid $blue;
+        }
+        .select2-selection__rendered{
+          line-height: 42px;
+        }
+        }
+        .select2-container{
+          width: 250px !important;
+
+          @include down-sm{
+            width: 200px !important;
+          }
+        }
+        .btn-yellow {
+          font-size: 18px;
+          width: auto;
+          padding: 6px 30px;
+          @include down-sm{
+            font-size: 16px;
+            padding: 4px 24px;
+
+          }
+      }
+      }
+    }
+  }
+}
+
+// ---- Gallery
+
+/* ---------- Gallery------------- */
+
+.microsite-gallery{
+  padding: 1rem 0;
+}
+.microsite-gallery-img .column img{
+  transition: transform .2s;
+  margin-bottom: 1rem;
+}
+
+.microsite-gallery-img .column img:hover{
+  transform: scale(1.1);
+}
+
+.microsite-gallery .row > .column {
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.microsite-gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.microsite-gallery .column {
+  float: left;
+  width: 50%;
+}
+
+/* The Modal (background) */
+.m-gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.microsite-gallery .modal-content {
+  position: relative;
+  background-color: #000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+  height: 100%;
+}
+
+/* The Close Button */
+.microsite-gallery .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.microsite-gallery .close:hover{
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+.microsite-gallery .mySlides {
+  display: none;
+  margin-bottom: 1rem;
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+.microsite-gallery .mySlides img{
+  width: 100%;
+  height:100%;
+}
+
+.microsite-gallery .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.microsite-gallery .prev,
+.microsite-gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 42px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.microsite-gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.microsite-gallery .numbertext {
+  color: #000;
+  font-size: 12px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.microsite-gallery img {
+  margin-bottom: -4px;
+}
+
+.microsite-gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  p{
+     @include down-sm{
+      font-size: 12px;
+     }
+  }
+}
+
+.microsite-gallery .demo {
+  opacity: 0.6;
+  max-height: 140px;
+  border: 1px solid #fff;
+}
+
+.microsite-gallery .active,
+.microsite-gallery .demo:hover {
+  opacity: 1;
+}

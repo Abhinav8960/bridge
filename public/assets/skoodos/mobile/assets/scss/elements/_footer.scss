@@ -1,0 +1,22 @@
+.footer {
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  img {
+    position: absolute;
+    width: 20%;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    @include down-sm{
+        width: 20%;
+
+    }
+  }
+}
